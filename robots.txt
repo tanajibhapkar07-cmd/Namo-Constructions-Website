@@ -1,0 +1,8 @@
+# robots.txt — Namo Constructions / ClueTech Technology
+# EDIT: replace the domain with your live domain before submitting to Google Search Console.
+
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://www.namoconstructions.in/sitemap.xml

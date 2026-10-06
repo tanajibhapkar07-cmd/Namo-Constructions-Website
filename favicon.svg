@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Namo Constructions">
+  <rect width="64" height="64" rx="14" fill="#0A1A33"/>
+  <path d="M8 31 32 11l24 20" fill="none" stroke="#C9A227" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M14 49V29h36v20" fill="none" stroke="#F5F8FC" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M10 52h44" fill="none" stroke="#F5F8FC" stroke-width="5" stroke-linecap="round"/>
+  <rect x="27" y="37" width="10" height="12" rx="2" fill="#1D53C4"/>
+</svg>
