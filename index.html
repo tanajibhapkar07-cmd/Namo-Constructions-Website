@@ -1,1229 +1,911 @@
-﻿<!DOCTYPE html>
-<html lang="en-IN">
+<!DOCTYPE html>
+<html lang="en" class="no-js">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- ==========================================================================
-     SEO - PRIMARY
-     Replace https://www.namoconstructions.in/ with your real domain in:
-       1. this canonical tag + og:url + og:image:url + twitter:image
-       2. assets/js/site.config.js  -> site.domain
-       3. robots.txt -> Sitemap:
-       4. sitemap.xml -> <loc> entries
-     ========================================================================== -->
-<title>Namo Constructions | House Construction Pune &amp; ClueTech AI Apps</title>
-<meta name="description" content="Namo Constructions offers residential house construction, RCC work and design-build services in Pune. ClueTech Tecnnology builds practical AI, Android and Flutter apps.">
-<meta name="keywords" content="Namo Constructions, house construction Pune, RCC contractor Pune, residential construction Pune, bungalow construction Pune, construction company Pune, ClueTech Tecnnology, AI applications, Android applications, Flutter software, AI software India">
+<!-- =========================================================
+     NAMO CONSTRUCTIONS — CONSTRUCTION & CLUETECH TECHNOLOGY
+     Main page
+     EDIT: replace the domain, email, phone and address below
+     with your official records (Google Play / D-U-N-S).
+     ========================================================= -->
+
+<title>Namo Constructions | House Construction &amp; RCC Contractor in Pune + ClueTech Technology</title>
+<meta name="description" content="Namo Constructions is a Pune based residential construction and RCC contractor offering house construction, design and build and structural supervision. ClueTech Technology develops practical AI applications for Android and Flutter.">
+<meta name="keywords" content="Namo Constructions, house construction Pune, RCC contractor Pune, residential construction Pune, bungalow construction Pune, construction company Pune, ClueTech Technology, AI applications, Android applications, Flutter software, AI software India">
 <meta name="author" content="Namo Constructions">
-<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large">
-<meta name="theme-color" content="#0c2044">
-<meta name="format-detection" content="telephone=yes">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#0A1A33">
+
+<!-- EDIT: canonical URL must match your final domain -->
 <link rel="canonical" href="https://www.namoconstructions.in/">
 
-<!-- ===================== Open Graph / social ===================== -->
+<!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Namo Constructions">
-<meta property="og:locale" content="en_IN">
-<meta property="og:title" content="Namo Constructions | House Construction Pune &amp; ClueTech AI Apps">
-<meta property="og:description" content="Residential construction and RCC engineering services by Namo Constructions, plus practical AI, Android and Flutter apps from ClueTech Tecnnology.">
+<meta property="og:title" content="Namo Constructions | Building Dreams. Creating Technology.">
+<meta property="og:description" content="Residential construction and RCC services in Pune, plus practical AI applications for Android and Flutter by ClueTech Technology.">
 <meta property="og:url" content="https://www.namoconstructions.in/">
-<meta property="og:image" content="https://www.namoconstructions.in/assets/img/og-image.png">
+<meta property="og:image" content="https://www.namoconstructions.in/assets/images/og-image.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Namo Constructions - Construction and Cluetech Technology">
+<meta property="og:image:alt" content="Namo Constructions — Construction and ClueTech Technology">
+<meta property="og:locale" content="en_IN">
+
+<!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Namo Constructions | House Construction Pune &amp; ClueTech AI Apps">
-<meta name="twitter:description" content="Residential construction and RCC engineering in Pune. Practical AI, Android and Flutter applications from ClueTech Tecnnology.">
-<meta name="twitter:image" content="https://www.namoconstructions.in/assets/img/og-image.png">
+<meta name="twitter:title" content="Namo Constructions | Building Dreams. Creating Technology.">
+<meta name="twitter:description" content="Residential construction and RCC services in Pune, plus practical AI applications for Android and Flutter.">
+<meta name="twitter:image" content="https://www.namoconstructions.in/assets/images/og-image.jpg">
 
-<!-- ===================== Icons ===================== -->
-<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
-<link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
-<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" sizes="180x180">
-<link rel="manifest" href="site.webmanifest">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
 
-<!-- ===================== Performance hints ===================== -->
-<link rel="preload" as="image" href="assets/img/hero-visual.svg" fetchpriority="high">
-<link rel="stylesheet" href="assets/css/styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&amp;family=Inter:wght@400;500;600;700&amp;display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
 
-<!-- Adds the .js class before first paint so entrance animations can run
-     without hiding content when JavaScript is disabled. -->
-<script>document.documentElement.className += " js";</script>
-
-<!-- ==========================================================================
-     SCHEMA.ORG JSON-LD  (Organisation structured data)
-     IMPORTANT: after you change your business details in
-     assets/js/site.config.js, update the matching values in this block too.
-     Run NAMO_CONFIG_DOCTOR() in the browser console to check for mismatches.
-     ========================================================================== -->
+<!-- Structured data: organisation (used for Google Play organisation verification) -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@graph": [
+  "@type": "Organization",
+  "@id": "https://www.namoconstructions.in/#organization",
+  "name": "Namo Constructions",
+  "alternateName": "NAMO CONSTRUCTIONS - CONSTRUCTION & CLUETECH TECHNOLOGY",
+  "url": "https://www.namoconstructions.in/",
+  "logo": "https://www.namoconstructions.in/favicon.svg",
+  "image": "https://www.namoconstructions.in/assets/images/og-image.jpg",
+  "slogan": "Building Dreams. Creating Technology.",
+  "description": "Namo Constructions is a Pune based organisation with two divisions: Namo Constructions for residential construction and engineering services, and ClueTech Technology for practical AI, Android and Flutter software products.",
+  "email": "contact@namoconstructions.in",
+  "telephone": "+91-7776006122",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Survey No. 50, Nanaibaug, B. T. Kawade Road, Ghorpadigaon, Pune City",
+    "addressLocality": "Pune",
+    "addressRegion": "Maharashtra",
+    "postalCode": "411036",
+    "addressCountry": "IN"
+  },
+  "contactPoint": [
+    {
+      "@type": "ContactPoint",
+      "contactType": "customer enquiries",
+      "email": "contact@namoconstructions.in",
+      "telephone": "+91-7776006122",
+      "availableLanguage": ["English", "Hindi", "Marathi"]
+    }
+  ],
+  "areaServed": "Pune and surrounding areas, Maharashtra, India",
+  "knowsAbout": ["Residential Construction", "RCC Work", "Design and Build", "Structural Supervision", "AI Applications", "Android Applications", "Flutter Software"],
+  "subOrganization": [
     {
       "@type": "Organization",
-      "@id": "https://www.namoconstructions.in/#organization",
-      "name": "Namo Constructions",
-      "legalName": "Namo Constructions",
-      "alternateName": "ClueTech Tecnnology",
-      "url": "https://www.namoconstructions.in/",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://www.namoconstructions.in/assets/img/icon-512.png",
-        "width": 512,
-        "height": 512,
-        "caption": "Namo Constructions logo"
-      },
-      "image": "https://www.namoconstructions.in/assets/img/og-image.png",
-      "email": "contact@namoconstructions.in",
-      "telephone": "+91-77760-06122",
-      "description": "Namo Constructions is a residential construction and engineering services business operating from Pune, Maharashtra. Through its technology division ClueTech Tecnnology it also develops practical AI, Android and Flutter applications.",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Survey No. 50, Nanaibaug, B. T. Kawade Road, Ghorpadigaon",
-        "addressLocality": "Pune City",
-        "addressRegion": "Maharashtra",
-        "postalCode": "411036",
-        "addressCountry": "IN"
-      },
-      "areaServed": [
-        { "@type": "City", "name": "Pune" },
-        { "@type": "State", "name": "Maharashtra" }
-      ],
-      "knowsAbout": [
-        "Residential house construction",
-        "RCC structural work",
-        "Design and build contracting",
-        "Structural supervision",
-        "Construction quality and safety",
-        "Artificial intelligence applications",
-        "Android application development",
-        "Flutter application development"
-      ],
-      "contactPoint": [{
-        "@type": "ContactPoint",
-        "contactType": "customer enquiries",
-        "telephone": "+91-77760-06122",
-        "email": "contact@namoconstructions.in",
-        "areaServed": ["IN", "IN-MH"],
-        "availableLanguage": ["en", "mr", "hi"]
-      }],
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Construction services",
-        "itemListElement": [
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "House Construction" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "RCC Work" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Design and Build" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Structural Supervision" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Quality and Safety Management" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Project Commitment and Handover" } }
-        ]
-      }
-    },
-    {
-      "@type": "WebSite",
-      "@id": "https://www.namoconstructions.in/#website",
-      "url": "https://www.namoconstructions.in/",
-      "name": "Namo Constructions",
-      "description": "Namo Constructions - Construction and Cluetech Technology",
-      "inLanguage": "en-IN",
-      "publisher": { "@id": "https://www.namoconstructions.in/#organization" }
-    },
-    {
-      "@type": "WebPage",
-      "@id": "https://www.namoconstructions.in/#webpage",
-      "url": "https://www.namoconstructions.in/",
-      "name": "Namo Constructions | House Construction Pune & ClueTech AI Apps",
-      "isPartOf": { "@id": "https://www.namoconstructions.in/#website" },
-      "about": { "@id": "https://www.namoconstructions.in/#organization" },
-      "inLanguage": "en-IN"
+      "name": "ClueTech Technology",
+      "description": "Technology division developing practical AI powered applications for Android and Flutter.",
+      "url": "https://www.namoconstructions.in/#ai-apps"
     }
   ]
 }
 </script>
-<!--
-  ---------------------------------------------------------------------------
-  SOFTWARE APPLICATION SCHEMA - TEMPLATE
-  Add a block like the one below ONLY for an app that is genuinely published on
-  Google Play. Remove the comment markers and paste it as a new node inside the
-  "@graph" array above. Never declare an application that has not been released.
 
-      {
-        "@type": "SoftwareApplication",
-        "@id": "https://www.namoconstructions.in/#app-clue-photo-resizer",
-        "name": "Clue AI Photo Resizer",
-        "applicationCategory": "MultimediaApplication",
-        "applicationSubCategory": "Photo resizing and compression",
-        "operatingSystem": "Android",
-        "url": "https://play.google.com/store/apps/details?id=YOUR_PACKAGE_NAME",
-        "downloadUrl": "https://play.google.com/store/apps/details?id=YOUR_PACKAGE_NAME",
-        "softwareVersion": "1.0",
-        "publisher": { "@id": "https://www.namoconstructions.in/#organization" },
-        "inLanguage": "en",
-        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "INR" },
-        "featureList": "Resize photos, Compress images, AI-assisted resizing",
-        "description": "Short factual description of the published app."
-      }
-  ---------------------------------------------------------------------------
--->
+<!-- Structured data: website -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Namo Constructions",
+  "alternateName": "Namo Constructions / ClueTech Technology",
+  "url": "https://www.namoconstructions.in/",
+  "inLanguage": "en-IN",
+  "publisher": { "@id": "https://www.namoconstructions.in/#organization" }
+}
+</script>
 
+<!-- Structured data: software products (no ratings or reviews are declared) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Clue AI Photo Resizer",
+  "applicationCategory": "MultimediaApplication",
+  "operatingSystem": "Android",
+  "description": "Clue AI Photo Resizer is an upcoming Android application from ClueTech Technology for resizing and cropping photos. Not yet published on Google Play.",
+  "url": "https://www.namoconstructions.in/#ai-apps",
+  "publisher": { "@id": "https://www.namoconstructions.in/#organization" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Clue AI Background Remover",
+  "applicationCategory": "MultimediaApplication",
+  "operatingSystem": "Android",
+  "description": "Clue AI Background Remover is an upcoming Android application from ClueTech Technology for removing photo backgrounds with AI assistance. Not yet published on Google Play.",
+  "url": "https://www.namoconstructions.in/#ai-apps",
+  "publisher": { "@id": "https://www.namoconstructions.in/#organization" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Clue Triangle Puzzle",
+  "applicationCategory": "GameApplication",
+  "operatingSystem": "Android",
+  "description": "Clue Triangle Puzzle is an upcoming Android puzzle application from ClueTech Technology. Not yet published on Google Play.",
+  "url": "https://www.namoconstructions.in/#ai-apps",
+  "publisher": { "@id": "https://www.namoconstructions.in/#organization" }
+}
+</script>
+
+<script>document.documentElement.classList.remove('no-js');document.documentElement.classList.add('js');</script>
 </head>
 
 <body>
-<a class="skip-link" href="#main">Skip to main content</a>
+<a class="skip-link" href="#main">Skip to content</a>
 
-<!-- ==========================================================================
-     TOP BAR (desktop only) - phone, email, address
-     Values come from assets/js/site.config.js
-     ========================================================================== -->
-<div class="topbar">
-  <div class="container">
-    <ul class="topbar-list">
-      <li>
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg>
-        <a data-tel href="#" data-bind="contact.phoneDisplay">+91 77760 06122</a>
-      </li>
-      <li>
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
-        <a data-mailto href="#" data-bind="contact.email">contact@namoconstructions.in</a>
-      </li>
-    </ul>
-    <ul class="topbar-list">
-      <li>
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
-        <span>Survey No. 50, Nanaibaug, B. T. Kawade Road, Ghorpadigaon, Pune City, Pune 411036</span>
-      </li>
-    </ul>
-  </div>
-</div>
+<!-- ===================== ICON SPRITE ===================== -->
+<svg class="sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+  <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h13M12.5 6.5L19 12l-6.5 5.5"/></symbol>
+  <symbol id="i-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9.5l6 6 6-6"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12.5l5 5 10-11"/></symbol>
+  <symbol id="i-check-circle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12.3l2.7 2.7L16.2 9.5"/></symbol>
+  <symbol id="i-home" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 11L12 3.5 20.5 11"/><path d="M5.5 9.7V20.5h13V9.7"/><path d="M9.7 20.5v-6h4.6v6"/></symbol>
+  <symbol id="i-layers" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.5l8.5 4.7-8.5 4.7-8.5-4.7 8.5-4.7z"/><path d="M3.5 13l8.5 4.7 8.5-4.7"/></symbol>
+  <symbol id="i-ruler" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2.8" y="8.5" width="18.4" height="7" rx="1.5"/><path d="M7 8.5v3M11 8.5v4.2M15 8.5v3M19 8.5v4.2"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7.5 3v6c0 4.6-3.2 7.8-7.5 9-4.3-1.2-7.5-4.4-7.5-9V6L12 3z"/><path d="M8.8 12.2l2.4 2.4 4-4.3"/></symbol>
+  <symbol id="i-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8.5 3v4M15.5 3v4"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="M3.5 7.5l8.5 6 8.5-6"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21.5s7.5-6.2 7.5-11.5a7.5 7.5 0 1 0-15 0c0 5.3 7.5 11.5 7.5 11.5z"/><circle cx="12" cy="10" r="2.8"/></symbol>
+  <symbol id="i-sparkles" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M11 3.5l1.7 4.4 4.4 1.7-4.4 1.7L11 15.7l-1.7-4.4L4.9 9.6l4.4-1.7L11 3.5z"/><path d="M18 14.5l.9 2.3 2.3.9-2.3.9-.9 2.3-.9-2.3-2.3-.9 2.3-.9.9-2.3z"/></symbol>
+  <symbol id="i-smartphone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6.5" y="2.5" width="11" height="19" rx="2.8"/><path d="M10.5 5.5h3M12 18.5h.01"/></symbol>
+  <symbol id="i-code" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 7.5L3.5 12l5 4.5M15.5 7.5l5 4.5-5 4.5M13.5 4.5l-3 15"/></symbol>
+  <symbol id="i-triangle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4.5l8.5 15H3.5l8.5-15z"/><path d="M12 4.5v15M7.75 12h8.5"/></symbol>
+  <symbol id="i-crop" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 2.5v13a2 2 0 0 0 2 2h13"/><path d="M2.5 6.5h13a2 2 0 0 1 2 2v13"/></symbol>
+  <symbol id="i-magic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20L14.5 9.5"/><path d="M15 3.5l1.1 2.9 2.9 1.1-2.9 1.1L15 11.5l-1.1-2.9L11 7.5l2.9-1.1L15 3.5z"/><path d="M20 13.5l.8 2 2 .8-2 .8-.8 2-.8-2-2-.8 2-.8.8-2z"/></symbol>
+  <symbol id="i-cpu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="6.5" y="6.5" width="11" height="11" rx="2"/><rect x="10.2" y="10.2" width="3.6" height="3.6" rx="1"/><path d="M9.5 2.5v4M14.5 2.5v4M9.5 17.5v4M14.5 17.5v4M2.5 9.5h4M2.5 14.5h4M17.5 9.5h4M17.5 14.5h4"/></symbol>
+  <symbol id="i-message" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6.5A2.5 2.5 0 0 1 6.5 4h11A2.5 2.5 0 0 1 20 6.5v7a2.5 2.5 0 0 1-2.5 2.5H9.5L4 20.5V6.5z"/></symbol>
+  <symbol id="i-bulb" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 18.5h5M10.5 21.5h3"/><path d="M12 2.5a6.5 6.5 0 0 0-3.8 11.8c.7.5 1.1 1.3 1.1 2.2h5.4c0-.9.4-1.7 1.1-2.2A6.5 6.5 0 0 0 12 2.5z"/></symbol>
+  <symbol id="i-briefcase" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="7.5" width="19" height="13" rx="2.5"/><path d="M9 7.5V6a2.5 2.5 0 0 1 2.5-2.5h1A2.5 2.5 0 0 1 15 6v1.5"/><path d="M2.5 12.5h19"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5.2l3.3 2"/></symbol>
+  <symbol id="i-hardhat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 16.5a8 8 0 0 1 16 0"/><rect x="2.5" y="16.5" width="19" height="4" rx="1.5"/><path d="M9.5 9V6.5a2.5 2.5 0 0 1 5 0V9"/></symbol>
+  <symbol id="i-building" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 7.5h2M13 7.5h2M9 11.5h2M13 11.5h2M9 15.5h2M13 15.5h2"/><path d="M10 21v-3.5h4V21"/></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4.5" y="10" width="15" height="10.5" rx="2.5"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/><path d="M12 14v3"/></symbol>
+  <symbol id="i-file" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7.5A2.5 2.5 0 0 0 5 5.5v13A2.5 2.5 0 0 0 7.5 21h9a2.5 2.5 0 0 0 2.5-2.5V8l-5-5z"/><path d="M14 3v5h5"/></symbol>
+  <symbol id="i-info" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v5.5M12 7.6h.01"/></symbol>
+  <symbol id="i-image" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4.5" width="18" height="15" rx="2.5"/><circle cx="8.8" cy="9.8" r="1.8"/><path d="M4 17.5l4.8-4.3 3.7 3.2 3-2.6 4.5 3.7"/></symbol>
+  <symbol id="i-external" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h6v6"/><path d="M20 4l-8.5 8.5"/><path d="M18 14.5V19a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4.5"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 5.5l10.5 6.5L8 18.5v-13z"/></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a15.5 15.5 0 0 1 0 18M12 3a15.5 15.5 0 0 0 0 18"/></symbol>
+</svg>
 
-<!-- ==========================================================================
-     HEADER
-     ========================================================================== -->
-<header class="site-header">
-  <div class="container header-inner">
-
-    <!-- Brand. Swap assets/img/logo.svg for your own logo file. -->
-    <a class="brand" href="#home" aria-label="Namo Constructions - home">
-      <img class="brand-mark" src="assets/img/logo.svg" width="44" height="44"
-           alt="Namo Constructions logo" fetchpriority="high">
-      <span class="brand-text">
-        <span class="brand-name">Namo Constructions</span>
-        <span class="brand-sub">Construction &amp; Cluetech Technology</span>
-      </span>
-    </a>
-
-    <!-- Desktop navigation -->
-    <nav class="nav-desktop" aria-label="Primary">
-      <a href="#home"        data-spy>Home</a>
-      <a href="#about"       data-spy>About</a>
-      <a href="#construction" data-spy>Construction</a>
-      <a href="#ai-apps"     data-spy>AI Apps</a>
-      <a href="#android"     data-spy>Android</a>
-      <a href="#flutter"     data-spy>Flutter</a>
-      <a href="#projects"    data-spy>Projects</a>
-      <a href="#contact"     data-spy>Contact</a>
-      <a class="btn btn--primary btn--sm header-cta" href="#contact">Get a Quotation</a>
-    </nav>
-
-    <!-- Hamburger (mobile + tablet) -->
-    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open navigation menu">
-      <span class="nav-toggle-box" aria-hidden="true"><span></span><span></span><span></span></span>
-    </button>
-  </div>
-</header>
-
-<!-- Mobile drawer -->
-<div class="nav-scrim" aria-hidden="true"></div>
-<nav class="nav-mobile" id="mobile-nav" aria-label="Mobile">
-  <ul class="nav-mobile-list">
-    <li><a href="#home">Home</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#construction">Construction</a></li>
-    <li><a href="#ai-apps">AI Apps</a></li>
-    <li><a href="#android">Android</a></li>
-    <li><a href="#flutter">Flutter</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-  <div class="nav-mobile-foot">
-    <a class="btn btn--primary btn--block" data-tel href="#">Call now</a>
-    <div class="nav-mobile-meta">
-      <a data-mailto href="#" data-bind="contact.email">contact@namoconstructions.in</a>
-      <a data-tel href="#" data-bind="contact.phoneDisplay">+91 77760 06122</a>
+<!-- ===================== HEADER ===================== -->
+<header class="site-header" id="siteHeader">
+  <!-- EDIT: top bar contact details -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <div class="topbar__group">
+        <span class="topbar__item"><svg class="icon icon--xs" aria-hidden="true"><use href="#i-phone"></use></svg>7776006122</span>
+        <a class="topbar__item topbar__item--mail" href="mailto:contact@namoconstructions.in"><svg class="icon icon--xs" aria-hidden="true"><use href="#i-mail"></use></svg>contact@namoconstructions.in</a>
+      </div>
+      <div class="topbar__group">
+        <span class="topbar__item"><svg class="icon icon--xs" aria-hidden="true"><use href="#i-pin"></use></svg>Pune, Maharashtra, India</span>
+      </div>
     </div>
   </div>
-</nav>
+
+  <div class="navbar">
+    <div class="container navbar__inner">
+      <a class="brand" href="#home" aria-label="Namo Constructions — home">
+        <!-- EDIT: brand logo — replace assets/images/logo.png to change it -->
+        <img class="brand__mark" src="assets/images/logo.png" alt="" width="52" height="52" decoding="async">
+        <span class="brand__text">
+          <strong>NAMO CONSTRUCTIONS</strong>
+          <small>CONSTRUCTION &amp; CLUETECH TECHNOLOGY</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="primaryNav" aria-label="Open navigation menu">
+        <svg class="icon nav-toggle__open" aria-hidden="true"><use href="#i-menu"></use></svg>
+        <svg class="icon nav-toggle__close" aria-hidden="true"><use href="#i-x"></use></svg>
+      </button>
+
+      <nav class="nav" id="primaryNav" aria-label="Primary navigation">
+        <p class="nav__heading">Menu</p>
+        <ul class="nav__list">
+          <li><a class="nav__link is-active" href="#home">Home</a></li>
+          <li><a class="nav__link" href="#about">About</a></li>
+          <li><a class="nav__link" href="#construction">Construction</a></li>
+          <li><a class="nav__link" href="#ai-apps">AI Apps</a></li>
+          <li><a class="nav__link" href="#android">Android</a></li>
+          <li><a class="nav__link" href="#flutter">Flutter</a></li>
+          <li><a class="nav__link" href="#projects">Projects</a></li>
+          <li><a class="nav__link" href="#contact">Contact</a></li>
+        </ul>
+        <a class="btn btn--primary btn--sm nav__cta" href="#contact">Get in Touch</a>
+      </nav>
+    </div>
+  </div>
+</header>
+<div class="nav-overlay" id="navOverlay" aria-hidden="true"></div>
 
 <main id="main">
 
-  <!-- ========================================================================
-       HERO
-       ======================================================================== -->
-  <section class="hero" id="home">
-    <div class="container">
-      <div class="split split--even">
-        <div class="hero-copy">
-          <p class="eyebrow">Namo Constructions &middot; Pune, India</p>
-          <h1>Building Dreams.<br><span class="accent">Creating Technology.</span></h1>
-          <p class="hero-sub">
-            Namo Constructions delivers professional residential construction and RCC engineering
-            services, while ClueTech Tecnnology develops practical AI-powered applications for
-            Android and Flutter. Two divisions, one focus on work that actually gets done.
-          </p>
+<!-- ===================== HERO ===================== -->
+<section class="hero" id="home" aria-labelledby="hero-title">
+  <div class="container hero__grid">
+    <div class="hero__content">
+      <p class="eyebrow">Pune, Maharashtra · Construction + Technology</p>
+      <h1 class="hero__title" id="hero-title">Building Dreams. <span>Creating Technology.</span></h1>
+      <p class="hero__lead">Namo Constructions provides professional residential construction and RCC services — planned from drawings and executed under engineering supervision — while <strong>ClueTech Technology</strong> develops practical AI-powered applications for Android and Flutter.</p>
 
-          <div class="btn-row">
-            <a class="btn btn--primary" href="#construction">
-              Explore Construction
-              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-            </a>
-            <a class="btn btn--ghost" href="#ai-apps">
-              Explore AI Apps
-              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="2.5"/><path d="M11 19h2"/></svg>
-            </a>
-          </div>
-
-          <ul class="hero-points">
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Two focused divisions</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Engineering-led execution</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Pune &amp; surrounding areas</li>
-          </ul>
-        </div>
-
-        <!-- Replace with a real photograph if you prefer:
-             <img src="assets/img/your-photo.jpg" width="1120" height="940" fetchpriority="high"
-                  alt="Namo Constructions residential construction and ClueTech software applications"> -->
-        <div class="hero-visual reveal" data-delay="2">
-          <div class="hero-visual__frame">
-            <img src="assets/img/hero-visual.svg" width="1120" height="940" fetchpriority="high"
-                 alt="Illustration of a modern house, architectural blueprint, smartphone and laptop representing Namo Constructions construction services and ClueTech AI software">
-          </div>
-          <span class="hero-float hero-float--a">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M5 21V8l7-5 7 5v13M9 21v-6h6v6"/></svg>
-            Residential &amp; RCC work
-          </span>
-          <span class="hero-float hero-float--b">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1"/><circle cx="12" cy="12" r="4"/></svg>
-            AI &middot; Android &middot; Flutter
-          </span>
-        </div>
+      <div class="hero__actions">
+        <a class="btn btn--gold" href="#construction">Explore Construction <svg class="icon icon--sm" aria-hidden="true"><use href="#i-arrow"></use></svg></a>
+        <a class="btn btn--ghost" href="#ai-apps">Explore AI Apps</a>
       </div>
 
-      <!-- Capability strip (services, not statistics) -->
-      <div class="trust-strip reveal" data-delay="3">
-        <div class="trust-item"><span class="k">House Construction</span><span class="v">Residential</span></div>
-        <div class="trust-item"><span class="k">RCC &amp; Structural</span><span class="v">Engineering</span></div>
-        <div class="trust-item"><span class="k">Design &amp; Build</span><span class="v">Single Point</span></div>
-        <div class="trust-item"><span class="k">AI &amp; Android Apps</span><span class="v">ClueTech</span></div>
+      <ul class="hero__points">
+        <li><svg class="icon icon--sm" aria-hidden="true"><use href="#i-check"></use></svg>Residential construction &amp; RCC in Pune</li>
+        <li><svg class="icon icon--sm" aria-hidden="true"><use href="#i-check"></use></svg>Engineering-led site execution</li>
+        <li><svg class="icon icon--sm" aria-hidden="true"><use href="#i-check"></use></svg>Practical AI apps for Android &amp; Flutter</li>
+      </ul>
+    </div>
+
+    <div class="hero__visual">
+      <div class="hero__frame">
+        <img src="assets/images/hero-house.jpg" alt="Modern residential house built by Namo Constructions" width="1200" height="900" fetchpriority="high">
       </div>
     </div>
-  </section>
+  </div>
 
-  <!-- ========================================================================
-       ABOUT
-       ======================================================================== -->
-  <section class="section section--alt" id="about" aria-labelledby="about-title">
-    <div class="container">
-      <div class="split">
-        <div>
-          <p class="eyebrow">About the organisation</p>
-          <h2 id="about-title">One organisation.<br>Two practical divisions.</h2>
-          <p class="lead" style="margin-top:1rem">
-            Namo Constructions runs two related but distinct lines of work. The construction
-            division delivers residential building and engineering-led project execution. The
-            technology division develops practical software and AI applications that solve
-            everyday problems.
-          </p>
-          <p style="margin-top:1rem">
-            Both divisions run on the same principle: understand the real requirement first,
-            then do the work properly. That means sound engineering on site, and software that
-            works reliably on the devices people actually own.
-          </p>
+  <!-- Capability strip -->
+  <div class="strip">
+    <div class="container strip__grid">
+      <div class="strip__item"><svg class="icon" aria-hidden="true"><use href="#i-home"></use></svg><span>House Construction &amp; RCC</span></div>
+      <div class="strip__item"><svg class="icon" aria-hidden="true"><use href="#i-ruler"></use></svg><span>Design &amp; Structural Supervision</span></div>
+      <div class="strip__item"><svg class="icon" aria-hidden="true"><use href="#i-sparkles"></use></svg><span>AI-Powered Applications</span></div>
+      <div class="strip__item"><svg class="icon" aria-hidden="true"><use href="#i-code"></use></svg><span>Android &amp; Flutter Software</span></div>
+    </div>
+  </div>
+</section>
 
-          <ul class="tick-list" style="margin-top:1.5rem">
-            <li>Residential construction and RCC services across Pune and nearby areas</li>
-            <li>Software products developed and maintained by the same organisation</li>
-            <li>Direct communication with the people doing the work</li>
-            <li>Clear scope, clear documentation, clear handover</li>
+<!-- ===================== ABOUT ===================== -->
+<section class="section" id="about" aria-labelledby="about-title">
+  <div class="container">
+    <div class="section__head reveal">
+      <p class="eyebrow">About the organisation</p>
+      <h2 class="section__title" id="about-title">Two practical divisions. One standard of quality.</h2>
+      <p class="section__lead">Namo Constructions is a Pune based organisation working in two clear areas — construction and technology. Every project, whether a residential building or a software product, is planned carefully, executed with clear communication and delivered with commitment.</p>
+    </div>
+
+    <div class="divisions">
+      <article class="division-card reveal">
+        <div class="division-card__media">
+          <img src="assets/images/about-construction.jpg" alt="Residential construction site managed by Namo Constructions" width="1000" height="760" loading="lazy">
+        </div>
+        <div class="division-card__body">
+          <span class="division-card__tag">Division 01</span>
+          <span class="icon-chip"><svg class="icon" aria-hidden="true"><use href="#i-hardhat"></use></svg></span>
+          <h3>Namo Constructions</h3>
+          <p class="division-card__role">Residential construction &amp; engineering</p>
+          <p>Namo Constructions focuses on residential construction and engineering-led project execution. Work is planned from approved drawings, carried out under site supervision and checked for quality and safety at each stage.</p>
+          <ul class="tick-list">
+            <li><svg class="icon icon--xs" aria-hidden="true"><use href="#i-check"></use></svg>House construction and bungalows</li>
+            <li><svg class="icon icon--xs" aria-hidden="true"><use href="#i-check"></use></svg>RCC and structural work</li>
+            <li><svg class="icon icon--xs" aria-hidden="true"><use href="#i-check"></use></svg>Design and build coordination</li>
+            <li><svg class="icon icon--xs" aria-hidden="true"><use href="#i-check"></use></svg>Site supervision and handover</li>
           </ul>
         </div>
+      </article>
 
-        <div class="about-split__card reveal" data-delay="2">
-          <p class="eyebrow is-gold eyebrow--light">Our two divisions</p>
-          <div class="division">
-            <h3>
-              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M5 21V8l7-5 7 5v13M9 21v-6h6v6"/></svg></span>
-              Namo Constructions
-            </h3>
-            <p>
-              Residential construction and engineering-led project execution: house construction,
-              RCC structural work, design-and-build delivery, structural supervision and quality
-              and safety control on site.
-            </p>
-          </div>
-          <div class="division">
-            <h3>
-              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="2.5"/><path d="M11 18h2"/></svg></span>
-              ClueTech Tecnnology
-            </h3>
-            <p>
-              Practical software and AI applications developed for Android and Flutter, focused
-              on everyday utilities such as photo resizing, background removal and puzzle-based
-              entertainment.
-            </p>
-          </div>
+      <article class="division-card division-card--alt reveal">
+        <div class="division-card__media">
+          <img src="assets/images/about-technology.jpg" alt="ClueTech Technology software development for AI applications" width="1000" height="760" loading="lazy">
         </div>
-      </div>
-
-      <!-- Values -->
-      <h3 class="section-head is-centered" style="margin-top:clamp(2.5rem,6vw,4.5rem)">
-        <span class="eyebrow" style="justify-content:center">What we stand for</span>
-        <span id="values-title" style="display:block">Values that guide both divisions</span>
-      </h3>
-
-      <div class="grid grid-3">
-        <article class="card card--accent value-card reveal">
-          <span class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3Z"/><path d="m9 12 2 2 4-4"/></svg></span>
-          <h3>Quality</h3>
-          <p>Work is checked as it progresses, not only at the end. Materials, dimensions and finishing are reviewed against the agreed scope.</p>
-        </article>
-
-        <article class="card card--accent value-card reveal" data-delay="1">
-          <span class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2a9 9 0 0 0-9 9v4M3 15h3v6H3z"/><path d="M15 15h6v6h-6zM21 15v-4a9 9 0 0 0-3-6.7"/><path d="M12 2a9 9 0 0 1 9 9v4"/></svg></span>
-          <h3>Safety</h3>
-          <p>Site safety, disciplined sequencing and safe working methods are treated as part of the work, not an add-on.</p>
-        </article>
-
-        <article class="card card--accent value-card reveal" data-delay="2">
-          <span class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M6 21V8M18 21V8M3 8h18M3 8l9-5 9 5"/><path d="M9 13h6"/></svg></span>
-          <h3>Engineering</h3>
-          <p>Structural decisions are made with engineering reasoning behind them, so the finished building behaves properly for years.</p>
-        </article>
-
-        <article class="card card--accent value-card reveal">
-          <span class="icon-tile icon-tile--gold"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="2.5"/><path d="M11 19h2"/><path d="M9 8h6"/></svg></span>
-          <h3>Technology</h3>
-          <p>Construction and software are treated as two sides of one capability set, and technology is used to improve both.</p>
-        </article>
-
-        <article class="card card--accent value-card reveal" data-delay="1">
-          <span class="icon-tile icon-tile--gold"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18h6M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7c.7.5 1 1.3 1 2.1V18h6v-1.2c0-.8.3-1.6 1-2.1A7 7 0 0 0 12 2Z"/></svg></span>
-          <h3>Innovation</h3>
-          <p>New methods are adopted when they are practical and verifiable, not because they are new.</p>
-        </article>
-
-        <article class="card card--accent value-card reveal" data-delay="2">
-          <span class="icon-tile icon-tile--gold"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H8l-5 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M8 9h8M8 13h5"/></svg></span>
-          <h3>Communication</h3>
-          <p>Progress, cost implications and changes are communicated early, so decisions are never left to guesswork.</p>
-        </article>
-      </div>
-
-      <div class="card card--soft reveal" style="margin-top:var(--sp-5);align-items:center;gap:var(--sp-4);flex-direction:row;flex-wrap:wrap">
-        <span class="icon-tile icon-tile--gold icon-tile--lg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3v4M16 3v4M4 9h16M5 5h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Z"/><path d="m9 15 2 2 4-4"/></svg></span>
-        <div>
-          <h3 style="margin-bottom:.3rem">Project commitment</h3>
-          <p style="margin:0">Agreed scope, agreed timeline and a documented handover. We take responsibility for what we commit to, and we tell you early when something needs to change.</p>
+        <div class="division-card__body">
+          <span class="division-card__tag">Division 02</span>
+          <span class="icon-chip icon-chip--blue"><svg class="icon" aria-hidden="true"><use href="#i-cpu"></use></svg></span>
+          <h3>ClueTech Technology</h3>
+          <p class="division-card__role">AI, Android &amp; Flutter software</p>
+          <p>ClueTech Technology is the software division of the organisation. It focuses on practical software and AI applications that solve everyday tasks — beginning with mobile-first Android products and moving towards cross-platform Flutter applications.</p>
+          <ul class="tick-list">
+            <li><svg class="icon icon--xs" aria-hidden="true"><use href="#i-check"></use></svg>AI-powered photo tools</li>
+            <li><svg class="icon icon--xs" aria-hidden="true"><use href="#i-check"></use></svg>Android applications</li>
+            <li><svg class="icon icon--xs" aria-hidden="true"><use href="#i-check"></use></svg>Flutter software (in development)</li>
+            <li><svg class="icon icon--xs" aria-hidden="true"><use href="#i-check"></use></svg>Utility and puzzle applications</li>
+          </ul>
         </div>
-      </div>
+      </article>
     </div>
-  </section>
 
-  <!-- ========================================================================
-       CONSTRUCTION SERVICES
-       ======================================================================== -->
-  <section class="section" id="construction" aria-labelledby="construction-title">
-    <div class="container">
-      <div class="section-head">
-        <p class="eyebrow">Namo Constructions</p>
-        <h2 id="construction-title">Residential construction and RCC engineering services</h2>
-        <p>
-          We work as a residential construction and engineering service business in Pune and
-          surrounding areas. The scope covers planning inputs, structural execution, finishing
-          coordination and handover &mdash; handled either as separate stages or as a single
-          design-and-build responsibility.
-        </p>
-      </div>
+    <div class="values reveal">
+      <h3 class="values__title">What we work by</h3>
+      <ul class="values__grid">
+        <li class="value"><span class="icon-chip"><svg class="icon" aria-hidden="true"><use href="#i-check-circle"></use></svg></span><div><strong>Quality</strong><p>Materials, workmanship and finishes checked at every stage.</p></div></li>
+        <li class="value"><span class="icon-chip"><svg class="icon" aria-hidden="true"><use href="#i-shield"></use></svg></span><div><strong>Safety</strong><p>Site safety practice followed to protect people and property.</p></div></li>
+        <li class="value"><span class="icon-chip"><svg class="icon" aria-hidden="true"><use href="#i-ruler"></use></svg></span><div><strong>Engineering</strong><p>Drawings, levels and structural details drive site decisions.</p></div></li>
+        <li class="value"><span class="icon-chip icon-chip--blue"><svg class="icon" aria-hidden="true"><use href="#i-cpu"></use></svg></span><div><strong>Technology</strong><p>Software built around practical, everyday usefulness.</p></div></li>
+        <li class="value"><span class="icon-chip icon-chip--blue"><svg class="icon" aria-hidden="true"><use href="#i-bulb"></use></svg></span><div><strong>Innovation</strong><p>AI applied where it genuinely improves a task.</p></div></li>
+        <li class="value"><span class="icon-chip"><svg class="icon" aria-hidden="true"><use href="#i-message"></use></svg></span><div><strong>Communication</strong><p>Clear updates on scope, schedule and progress.</p></div></li>
+        <li class="value"><span class="icon-chip"><svg class="icon" aria-hidden="true"><use href="#i-briefcase"></use></svg></span><div><strong>Project Commitment</strong><p>A defined plan and a stated schedule, followed through to handover.</p></div></li>
+      </ul>
+    </div>
+  </div>
+</section>
 
-      <div class="grid grid-3">
+<!-- ===================== CONSTRUCTION ===================== -->
+<section class="section section--soft" id="construction" aria-labelledby="construction-title">
+  <div class="container">
+    <div class="section__head reveal">
+      <p class="eyebrow">Division 01 — Namo Constructions</p>
+      <h2 class="section__title" id="construction-title">Residential construction &amp; engineering services in Pune</h2>
+      <p class="section__lead">Services are provided in <strong>Pune and surrounding areas</strong>. Every project is planned from drawings, executed under supervision and checked for quality and safety through the work cycle.</p>
+    </div>
 
-        <article class="card service-card reveal">
-          <span class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M5 21V8l7-5 7 5v13"/><path d="M10 21v-6h4v6"/><path d="M9 11h.01M15 11h.01"/></svg></span>
+    <div class="card-grid card-grid--3">
+      <article class="service-card reveal">
+        <div class="service-card__media"><img src="assets/images/service-house.jpg" alt="House construction service by Namo Constructions in Pune" width="900" height="660" loading="lazy"></div>
+        <div class="service-card__body">
+          <span class="icon-chip"><svg class="icon" aria-hidden="true"><use href="#i-home"></use></svg></span>
           <h3>House Construction</h3>
-          <p>
-            End-to-end residential home construction, from foundation and structure through
-            roofing, plastering, flooring, painting and finishing, coordinated with the owner's
-            requirements and budget at every stage.
-          </p>
-          <ul class="dot-list" style="margin-top:var(--sp-4)">
-            <li>Independent houses and duplex homes</li>
-            <li>Bungalows and residential expansions</li>
-            <li>Renovation and additions</li>
-          </ul>
-          <p class="service-note">Available across Pune and surrounding areas.</p>
-        </article>
+          <p>Turnkey residential construction — footing, structure, plaster, finishes and handover, carried out as per approved drawings and site conditions.</p>
+        </div>
+      </article>
 
-        <article class="card service-card reveal" data-delay="1">
-          <span class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18"/><rect x="5" y="6" width="4" height="15" rx="1"/><rect x="15" y="6" width="4" height="15" rx="1"/><path d="M9 10h6M9 14h6M9 18h6"/></svg></span>
+      <article class="service-card reveal">
+        <div class="service-card__media"><img src="assets/images/service-rcc.jpg" alt="RCC work including columns, beams and slabs" width="900" height="660" loading="lazy"></div>
+        <div class="service-card__body">
+          <span class="icon-chip"><svg class="icon" aria-hidden="true"><use href="#i-layers"></use></svg></span>
           <h3>RCC Work</h3>
-          <p>
-            Reinforced cement concrete work carried out for foundations, columns, beams, slabs,
-            staircases and retaining elements &mdash; with correct cover, proper reinforcement
-            placement and disciplined curing.
-          </p>
-          <ul class="dot-list" style="margin-top:var(--sp-4)">
-            <li>Footings, plinth beams, columns and slabs</li>
-            <li>Staircases, chajjas and lintels</li>
-            <li>Water tank and retaining structures</li>
-          </ul>
-          <p class="service-note">Executed to the structural drawings agreed for the project.</p>
-        </article>
+          <p>Reinforced cement concrete work including footings, columns, beams, slabs and staircases, executed to structural drawings and detailing.</p>
+        </div>
+      </article>
 
-        <article class="card service-card reveal" data-delay="2">
-          <span class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h18v12H3z"/><path d="M3 20h18M7 20v-4M17 20v-4"/><path d="M3 8h18"/><path d="M8 8V4"/></svg></span>
+      <article class="service-card reveal">
+        <div class="service-card__media"><img src="assets/images/service-design.jpg" alt="Design and build service with drawings and planning" width="900" height="660" loading="lazy"></div>
+        <div class="service-card__body">
+          <span class="icon-chip"><svg class="icon" aria-hidden="true"><use href="#i-ruler"></use></svg></span>
           <h3>Design &amp; Build</h3>
-          <p>
-            A single point of responsibility covering planning and coordination of design with
-            construction execution, so drawings, cost and site reality stay aligned instead of
-            shifting responsibility between parties.
-          </p>
-          <ul class="dot-list" style="margin-top:var(--sp-4)">
-            <li>Layout, planning and design coordination</li>
-            <li>Structural and architectural drawings</li>
-            <li>Single-point budgeting and execution</li>
-          </ul>
-          <p class="service-note">Scope fixed in writing before work begins.</p>
-        </article>
+          <p>Coordinated planning of drawings, materials and site work under one point of responsibility, so design and execution stay aligned.</p>
+        </div>
+      </article>
 
-        <article class="card service-card reveal">
-          <span class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18"/><path d="m7 14 4-4 3 3 5-6"/></svg></span>
+      <article class="service-card reveal">
+        <div class="service-card__media"><img src="assets/images/service-supervision.jpg" alt="Structural supervision during construction on site" width="900" height="660" loading="lazy"></div>
+        <div class="service-card__body">
+          <span class="icon-chip"><svg class="icon" aria-hidden="true"><use href="#i-hardhat"></use></svg></span>
           <h3>Structural Supervision</h3>
-          <p>
-            Technical oversight of structural execution: review of reinforcement and formwork
-            before concreting, stage-wise checks, and prompt reporting of any site condition that
-            needs an engineering decision.
-          </p>
-          <ul class="dot-list" style="margin-top:var(--sp-4)">
-            <li>Pre-pour reinforcement and shuttering checks</li>
-            <li>Stage-wise quality checkpoints</li>
-            <li>Documented technical observations</li>
-          </ul>
-          <p class="service-note">Available as part of a build or as a standalone review.</p>
-        </article>
+          <p>Engineering supervision of alignment, levels, reinforcement fixing and concrete stages, with site records maintained at each step.</p>
+        </div>
+      </article>
 
-        <article class="card service-card reveal" data-delay="1">
-          <span class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3Z"/><path d="M12 8v5M12 16h.01"/></svg></span>
+      <article class="service-card reveal">
+        <div class="service-card__media"><img src="assets/images/service-quality.jpg" alt="Quality and safety checks on a construction site" width="900" height="660" loading="lazy"></div>
+        <div class="service-card__body">
+          <span class="icon-chip"><svg class="icon" aria-hidden="true"><use href="#i-shield"></use></svg></span>
           <h3>Quality &amp; Safety</h3>
-          <p>
-            Site safety practices and material discipline applied consistently: correct material
-            storage, safe access and scaffolding, sequenced work, and protection of completed work
-            during later stages.
-          </p>
-          <ul class="dot-list" style="margin-top:var(--sp-4)">
-            <li>Material and workmanship checks</li>
-            <li>Safe access, scaffolding and sequencing</li>
-            <li>Protection of completed stages</li>
-          </ul>
-          <p class="service-note">Practices followed on every active site.</p>
-        </article>
+          <p>Material checks, curing practice, finishing standards and site safety measures followed consistently through the work cycle.</p>
+        </div>
+      </article>
 
-        <article class="card service-card reveal" data-delay="2">
-          <span class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3v4M16 3v4M4 9h16"/><path d="M5 5h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Z"/><path d="m9 15 2 2 4-4"/></svg></span>
+      <article class="service-card reveal">
+        <div class="service-card__media"><img src="assets/images/service-commitment.jpg" alt="Planned construction schedule and project commitment" width="900" height="660" loading="lazy"></div>
+        <div class="service-card__body">
+          <span class="icon-chip"><svg class="icon" aria-hidden="true"><use href="#i-calendar"></use></svg></span>
           <h3>Project Commitment</h3>
-          <p>
-            Defined scope, realistic timelines and clear communication throughout the project. You
-            know what is agreed, what is in progress and what happens next at every point of the
-            build.
-          </p>
-          <ul class="dot-list" style="margin-top:var(--sp-4)">
-            <li>Written scope and transparent estimates</li>
-            <li>Regular progress updates</li>
-            <li>Documented handover and after-sales support</li>
-          </ul>
-          <p class="service-note">Estimates are project-specific and confirmed after site study.</p>
-        </article>
-
-      </div>
-
-      <!-- How we work -->
-      <h3 class="section-head" style="margin-top:clamp(2.5rem,6vw,4rem)">
-        <span class="eyebrow">How the work proceeds</span>
-        <span style="display:block">A straightforward sequence from first call to handover</span>
-      </h3>
-      <ol class="process">
-        <li class="process-step reveal">
-          <h4>Enquiry &amp; site visit</h4>
-          <p>We discuss your requirement and budget, then visit the site to understand the plot, access, soil and existing conditions.</p>
-        </li>
-        <li class="process-step reveal" data-delay="1">
-          <h4>Plan &amp; design inputs</h4>
-          <p>Layout and structural planning are prepared, material and method choices are outlined, and the scope is confirmed in writing.</p>
-        </li>
-        <li class="process-step reveal" data-delay="2">
-          <h4>Execution &amp; RCC works</h4>
-          <p>Foundation, RCC structure, masonry and finishing are executed stage by stage, with technical checks before each structural pour.</p>
-        </li>
-        <li class="process-step reveal" data-delay="3">
-          <h4>Handover &amp; support</h4>
-          <p>Completion checks, snag rectification, documentation and handover &mdash; followed by support for any post-completion requirements.</p>
-        </li>
-      </ol>
-
-      <!-- Service area + address -->
-      <div class="service-area reveal">
-        <span class="icon-tile icon-tile--lg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span>
-        <div style="flex:1 1 280px">
-          <h3>Service area: <span data-bind="address.serviceArea">Pune and surrounding areas</span></h3>
-          <address class="address-block" style="font-style:normal;margin-top:.35rem">
-            <span>Survey No. 50, Nanaibaug, B. T. Kawade Road, Ghorpadigaon</span>
-            <span>Pune City, Pune 411036, Maharashtra, India</span>
-          </address>
+          <p>A defined scope, a realistic schedule and regular progress updates, with communication maintained until the project is handed over.</p>
         </div>
-        <a class="btn btn--navy" data-directions href="#" rel="noopener">
-          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l19-8-8 19-2-8-9-3Z"/></svg>
-          Directions
-        </a>
-      </div>
+      </article>
     </div>
-  </section>
 
-  <!-- ========================================================================
-       CLUETECH TECHNOLOGY / AI APPS
-       ======================================================================== -->
-  <section class="section section--navy" id="ai-apps" aria-labelledby="ai-title">
-    <div class="container">
-      <div class="section-head">
-        <p class="eyebrow is-gold eyebrow--light">ClueTech Tecnnology</p>
-        <h2 id="ai-title">Practical AI applications, built for real devices</h2>
-        <p>
-          ClueTech Tecnnology is the software division of Namo Constructions. It develops focused
-          AI-powered mobile applications for image tools, photo processing and casual gaming
-          &mdash; designed for Android phones first, and for cross-platform Flutter delivery where
-          it makes sense.
-        </p>
+    <div class="area-band reveal">
+      <div class="area-band__info">
+        <p class="eyebrow eyebrow--light">Service area</p>
+        <h3>Pune and surrounding areas</h3>
+        <p>Residential construction, RCC work and engineering supervision across Pune city and nearby locations in Maharashtra.</p>
+        <ul class="area-band__tags">
+          <li>House Construction</li><li>Bungalows</li><li>RCC Structures</li><li>Structural Supervision</li>
+        </ul>
       </div>
 
-      <div class="avail-note">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path d="M12 16v-5M12 8h.01"/></svg>
-        <p style="margin:0">
-          <strong>Product status is shown honestly.</strong> Applications labelled
-          <em>Available on Google Play</em> are published and can be installed. Products still in
-          development are labelled <em>Coming Soon</em>. We never publish a download link for an
-          application that has not been released.
-        </p>
-      </div>
-
-      <div class="grid grid-3">
-
-        <article class="card card--dark app-card reveal">
-          <div class="app-card__top">
-            <span class="app-icon"><img src="assets/img/apps/clue-photo-resizer.svg" width="62" height="62" alt="Clue AI Photo Resizer app icon placeholder" loading="lazy" decoding="async"></span>
-            <div>
-              <h3>Clue AI Photo Resizer</h3>
-              <div class="badge-row" style="margin-top:.45rem">
-                <span class="badge badge--blue">Android</span>
-                <span class="badge badge--soon product-status">Coming Soon</span>
-              </div>
-            </div>
-          </div>
-          <p>
-            An image resizing utility that helps you prepare photos for sharing and uploads without
-            unnecessary quality loss. Built around predictable, quick results rather than heavy
-            processing.
-          </p>
-          <div class="app-card__badges">
-            <ul class="dot-list">
-              <li>Resize to preset or custom dimensions</li>
-              <li>Quality control before saving</li>
-              <li>Batch-friendly workflow for everyday use</li>
-              <li>On-device processing for everyday photos</li>
-            </ul>
-          </div>
-        </article>
-
-        <article class="card card--dark app-card reveal" data-delay="1">
-          <div class="app-card__top">
-            <span class="app-icon"><img src="assets/img/apps/clue-background-remover.svg" width="62" height="62" alt="Clue AI Background Remover app icon placeholder" loading="lazy" decoding="async"></span>
-            <div>
-              <h3>Clue AI Background Remover</h3>
-              <div class="badge-row" style="margin-top:.45rem">
-                <span class="badge badge--blue">Android</span>
-                <span class="badge badge--soon product-status">Coming Soon</span>
-              </div>
-            </div>
-          </div>
-          <p>
-            A background removal tool for isolating the main subject of a photo, aimed at quick
-            results for profile pictures, product listings and documents.
-          </p>
-          <div class="app-card__badges">
-            <ul class="dot-list">
-              <li>Subject detection and automatic cut-out</li>
-              <li>Edge refinement for clean outlines</li>
-              <li>Transparent or solid-colour export</li>
-              <li>Suitable for casual and work use</li>
-            </ul>
-          </div>
-        </article>
-
-        <article class="card card--dark app-card reveal" data-delay="2">
-          <div class="app-card__top">
-            <span class="app-icon"><img src="assets/img/apps/clue-triangle-puzzle.svg" width="62" height="62" alt="Clue Triangle Puzzle app icon placeholder" loading="lazy" decoding="async"></span>
-            <div>
-              <h3>Clue Triangle Puzzle</h3>
-              <div class="badge-row" style="margin-top:.45rem">
-                <span class="badge badge--blue">Android</span>
-                <span class="badge badge--soon product-status">Coming Soon</span>
-              </div>
-            </div>
-          </div>
-          <p>
-            A light puzzle game built around arranging triangle pieces into simple shapes. An
-            easy entry point to the ClueTech portfolio, with a focus on simple rules and smooth
-            interaction.
-          </p>
-          <div class="app-card__badges">
-            <ul class="dot-list">
-              <li>Triangle-based puzzle mechanics</li>
-              <li>Progressive difficulty levels</li>
-              <li>Lightweight, low-storage footprint</li>
-              <li>Playable offline</li>
-            </ul>
-          </div>
-        </article>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ========================================================================
-       ANDROID
-       ======================================================================== -->
-  <section class="section section--navy" id="android" aria-labelledby="android-title" style="padding-top:0">
-    <div class="container">
-      <div class="split">
+      <!-- EDIT: business address (must match Google Play / D-U-N-S records) -->
+      <address class="area-band__address">
+        <span class="icon-chip icon-chip--gold"><svg class="icon" aria-hidden="true"><use href="#i-pin"></use></svg></span>
         <div>
-          <p class="eyebrow is-gold eyebrow--light">Android</p>
-          <h2 id="android-title">Mobile-first Android applications</h2>
-          <p style="margin-top:1rem">
-            The Clue AI range is designed for Android smartphones first. The applications are
-            structured around small screens, efficient storage use and behaviour that stays
-            predictable on entry-level as well as current devices.
-          </p>
-          <ul class="platform-list" style="margin-top:1.5rem">
-            <li>
-              <span class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M11 18h2"/><path d="M10 5h4"/></svg></span>
-              <div>
-                <h3>Designed for small screens</h3>
-                <p>Single-handed layouts, readable type sizes and touch targets sized for everyday use.</p>
-              </div>
-            </li>
-            <li>
-              <span class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1"/><circle cx="12" cy="12" r="4"/></svg></span>
-              <div>
-                <h3>AI where it helps</h3>
-                <p>Artificial intelligence is applied to image tasks where it reduces effort &mdash; not added as decoration.</p>
-              </div>
-            </li>
-            <li>
-              <span class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h10"/><circle cx="18" cy="17" r="3"/></svg></span>
-              <div>
-                <h3>Lightweight by design</h3>
-                <p>Small download size and low memory use, so the apps remain usable on modest hardware and limited data plans.</p>
-              </div>
-            </li>
-            <li>
-              <span class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3Z"/><path d="m9 12 2 2 4-4"/></svg></span>
-              <div>
-                <h3>Play Store availability</h3>
-                <p>Applications appear here only after publication. Until then they are listed as Coming Soon with no download link.</p>
-              </div>
-            </li>
-          </ul>
+          <strong>NAMO CONSTRUCTIONS</strong>
+          <p>Survey No. 50, Nanaibaug, B. T. Kawade Road, Ghorpadigaon, Pune City, Pune 411036, Maharashtra, India</p>
         </div>
-
-        <div class="split--media-right media">
-          <div class="device-frame reveal" data-delay="2">
-            <img src="assets/img/device-mockup.svg" width="760" height="620" loading="lazy" decoding="async"
-                 alt="Android phone and Flutter development build showing ClueTech Tecnnology application interfaces">
-          </div>
-        </div>
-      </div>
+      </address>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ========================================================================
-       FLUTTER
-       ======================================================================== -->
-  <section class="section" id="flutter" aria-labelledby="flutter-title">
-    <div class="container">
-      <div class="split">
-        <div>
-          <p class="eyebrow">Flutter</p>
-          <h2 id="flutter-title">Flutter: the next software platform</h2>
-          <p style="margin-top:1rem">
-            Flutter is the intended direction for ClueTech Tecnnology&rsquo;s future mobile
-            software. It allows a single codebase to target Android and other platforms while
-            keeping interface behaviour and appearance consistent across devices.
-          </p>
-
-          <div class="avail-note" style="margin:1.5rem 0 0">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path d="M12 7v5l3 2M12 3v.5"/></svg>
-            <p style="margin:0">
-              <strong>No Flutter application has been released yet.</strong> Flutter work is at the
-              development stage. Nothing on this page should be read as a public download or a
-              released product.
-            </p>
-          </div>
-
-          <ul class="roadmap" style="margin-top:var(--sp-5)">
-            <li><strong>Cross-platform codebase</strong><span>One Flutter codebase targeting Android first, with room to extend.</span></li>
-            <li><strong>Shared UI layer</strong><span>Consistent screens and interaction patterns across supported devices.</span></li>
-            <li><strong>Reusable product logic</strong><span>Image processing and game logic structured to be shared between products.</span></li>
-            <li><strong>Release readiness</strong><span>Testing, store assets and listing preparation before any public release.</span></li>
-          </ul>
-        </div>
-
-        <div class="media">
-          <div class="card card--soft reveal" data-delay="2" style="padding:clamp(1.25rem,3vw,1.85rem)">
-            <span class="icon-tile icon-tile--lg icon-tile--gold" style="margin-bottom:var(--sp-4)">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2 6 13h6l-2 9 8-11h-6l2-9Z"/></svg>
-            </span>
-            <h3>Why Flutter for ClueTech</h3>
-            <ul class="tick-list" style="margin-top:var(--sp-3)">
-              <li>A single codebase instead of separate Android and other-platform codebases</li>
-              <li>Consistent interface rendering across a wide range of Android devices</li>
-              <li>Good fit for image tools and puzzle games with custom interaction</li>
-              <li>Easier long-term maintenance as the product range grows</li>
-            </ul>
-            <p class="text-muted" style="font-size:.875rem;margin-top:var(--sp-4)">
-              Status: in development. Publication is announced on this website once a release exists.
-            </p>
-          </div>
-        </div>
-      </div>
+<!-- ===================== AI APPS / CLUETECH ===================== -->
+<section class="section" id="ai-apps" aria-labelledby="ai-title">
+  <div class="container">
+    <div class="section__head reveal">
+      <p class="eyebrow">Division 02 — ClueTech Technology</p>
+      <h2 class="section__title" id="ai-title">Practical AI applications for everyday tasks</h2>
+      <p class="section__lead">ClueTech Technology develops small, focused applications that solve everyday problems — starting with photo tools powered by AI, designed mobile-first for Android smartphones.</p>
     </div>
-  </section>
 
-  <!-- ========================================================================
-       PROJECTS
-       ======================================================================== -->
-  <section class="section section--alt" id="projects" aria-labelledby="projects-title">
-    <div class="container">
-      <div class="section-head">
-        <p class="eyebrow">Projects</p>
-        <h2 id="projects-title">Construction projects and software products</h2>
-        <p>
-          This section is organised in two categories &mdash; construction projects and software
-          projects. Cards are prepared for genuine photographs and project documentation. Until
-          real photographs and verified details are available, each card is clearly marked as a
-          placeholder rather than presented as completed work.
-        </p>
-      </div>
-
-      <div class="filter-bar" data-filter-bar role="group" aria-label="Filter projects by category">
-        <button class="filter-btn" type="button" data-filter="all" aria-pressed="true">All</button>
-        <button class="filter-btn" type="button" data-filter="construction" aria-pressed="false">Construction</button>
-        <button class="filter-btn" type="button" data-filter="software" aria-pressed="false">Software</button>
-        <button class="filter-btn" type="button" data-filter="ongoing" aria-pressed="false">Ongoing</button>
-        <button class="filter-btn" type="button" data-filter="completed" aria-pressed="false">Completed</button>
-      </div>
-
-      <div class="grid grid-3">
-
-        <!-- ---------- CONSTRUCTION PROJECTS ---------- -->
-        <article class="card card--flush project-card reveal" data-category="construction completed">
-          <div class="card-media">
-            <span class="project-card__status badge badge--soon">Awaiting photograph</span>
-            <img src="assets/img/projects/placeholder-house.svg" width="800" height="500" loading="lazy" decoding="async"
-                 alt="Placeholder image for a completed residential house project">
-          </div>
-          <div class="card-body">
-            <h3>Residential House</h3>
-            <p>Card prepared for a completed residential house project, including scope, structural type and handover documentation.</p>
-            <div class="project-meta">
-              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M5 21V8l7-5 7 5v13"/></svg>House construction</span>
-              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 12 2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>Completed</span>
-            </div>
-          </div>
-        </article>
-
-        <article class="card card--flush project-card reveal" data-delay="1" data-category="construction completed">
-          <div class="card-media">
-            <span class="project-card__status badge badge--soon">Awaiting photograph</span>
-            <img src="assets/img/projects/placeholder-bungalow.svg" width="800" height="500" loading="lazy" decoding="async"
-                 alt="Placeholder image for a bungalow project">
-          </div>
-          <div class="card-body">
-            <h3>Bungalow</h3>
-            <p>Card prepared for bungalow construction work, covering planning, RCC structure and finishing stages.</p>
-            <div class="project-meta">
-              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M5 21V8l7-5 7 5v13"/></svg>Bungalow</span>
-              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 12 2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>Completed</span>
-            </div>
-          </div>
-        </article>
-
-        <article class="card card--flush project-card reveal" data-delay="2" data-category="construction completed">
-          <div class="card-media">
-            <span class="project-card__status badge badge--soon">Awaiting photograph</span>
-            <img src="assets/img/projects/placeholder-rcc.svg" width="800" height="500" loading="lazy" decoding="async"
-                 alt="Placeholder image for an RCC structural work project">
-          </div>
-          <div class="card-body">
-            <h3>RCC Structure</h3>
-            <p>Card prepared for RCC structural work such as columns, beams, slabs and staircases on a residential project.</p>
-            <div class="project-meta">
-              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18"/><rect x="5" y="6" width="4" height="15"/><rect x="15" y="6" width="4" height="15"/></svg>RCC work</span>
-              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 12 2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>Completed</span>
-            </div>
-          </div>
-        </article>
-
-        <article class="card card--flush project-card reveal" data-category="construction ongoing">
-          <div class="card-media">
-            <span class="project-card__status badge badge--blue">Ongoing</span>
-            <img src="assets/img/projects/placeholder-ongoing.svg" width="800" height="500" loading="lazy" decoding="async"
-                 alt="Placeholder image for an ongoing construction project">
-          </div>
-          <div class="card-body">
-            <h3>Ongoing Construction</h3>
-            <p>Card prepared for a project currently in progress, intended to carry dated site photographs and a short progress note.</p>
-            <div class="project-meta">
-              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>In progress</span>
-              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Pune</span>
-            </div>
-          </div>
-        </article>
-
-        <article class="card card--flush project-card reveal" data-delay="1" data-category="construction completed">
-          <div class="card-media">
-            <span class="project-card__status badge badge--soon">Awaiting photograph</span>
-            <img src="assets/img/projects/placeholder-completed.svg" width="800" height="500" loading="lazy" decoding="async"
-                 alt="Placeholder image for a completed and handed over project">
-          </div>
-          <div class="card-body">
-            <h3>Completed &amp; Handed Over</h3>
-            <p>Card reserved for a project that has reached practical completion and handover, for documenting the finished result.</p>
-            <div class="project-meta">
-              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3v4M16 3v4M4 9h16M5 5h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Z"/></svg>Handed over</span>
-              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Pune</span>
-            </div>
-          </div>
-        </article>
-
-        <!-- ---------- SOFTWARE PROJECTS ---------- -->
-        <article class="card card--flush project-card reveal" data-category="software">
-          <div class="card-media">
-            <span class="project-card__status badge badge--soon">In development</span>
-            <img src="assets/img/projects/placeholder-software.svg" width="800" height="500" loading="lazy" decoding="async"
-                 alt="Placeholder screenshot for the Clue AI Photo Resizer software project">
-          </div>
-          <div class="card-body">
+    <div class="card-grid card-grid--3">
+      <!-- PRODUCT 1 -->
+      <article class="product-card reveal">
+        <div class="product-card__media">
+          <img src="assets/images/product-photo-resizer.jpg" alt="Clue AI Photo Resizer application icon" width="700" height="700" loading="lazy">
+          <span class="status-badge status-badge--soon">Coming Soon</span>
+        </div>
+        <div class="product-card__body">
+          <div class="product-card__head">
+            <span class="icon-chip"><svg class="icon" aria-hidden="true"><use href="#i-crop"></use></svg></span>
             <h3>Clue AI Photo Resizer</h3>
-            <p>Android image resizing application from the ClueTech Tecnnology division, currently in development.</p>
-            <div class="project-meta">
-              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M11 18h2"/></svg>Android</span>
-              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Coming Soon</span>
-            </div>
           </div>
-        </article>
-
-        <article class="card card--flush project-card reveal" data-delay="1" data-category="software">
-          <div class="card-media">
-            <span class="project-card__status badge badge--soon">In development</span>
-            <img src="assets/img/projects/placeholder-software.svg" width="800" height="500" loading="lazy" decoding="async"
-                 alt="Placeholder screenshot for the Clue AI Background Remover software project">
-          </div>
-          <div class="card-body">
-            <h3>Clue AI Background Remover</h3>
-            <p>AI-assisted background removal application for Android, currently in development.</p>
-            <div class="project-meta">
-              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M11 18h2"/></svg>Android</span>
-              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Coming Soon</span>
-            </div>
-          </div>
-        </article>
-
-        <article class="card card--flush project-card reveal" data-delay="2" data-category="software">
-          <div class="card-media">
-            <span class="project-card__status badge badge--soon">In development</span>
-            <img src="assets/img/projects/placeholder-software.svg" width="800" height="500" loading="lazy" decoding="async"
-                 alt="Placeholder screenshot for the Clue Triangle Puzzle software project">
-          </div>
-          <div class="card-body">
-            <h3>Clue Triangle Puzzle</h3>
-            <p>Triangle-based puzzle game for Android, currently in development as part of the ClueTech portfolio.</p>
-            <div class="project-meta">
-              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M11 18h2"/></svg>Android</span>
-              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Coming Soon</span>
-            </div>
-          </div>
-        </article>
-
-      </div>
-
-      <p class="text-muted" style="margin-top:var(--sp-6);font-size:.875rem;max-width:80ch">
-        Placeholder cards are intentional. No customer names, reviews, project locations or
-        performance figures are shown on this website because none have been verified or
-        documented.
-      </p>
-    </div>
-  </section>
-
-  <!-- ========================================================================
-       CONTACT
-       ======================================================================== -->
-  <section class="section" id="contact" aria-labelledby="contact-title">
-    <div class="container">
-      <div class="section-head">
-        <p class="eyebrow">Contact</p>
-        <h2 id="contact-title">Talk to Namo Constructions</h2>
-        <p>
-          For a construction enquiry, a site visit, a software question or anything about the ClueTech
-          Tecnnology products, use any of the options below.
-        </p>
-      </div>
-
-      <div class="contact-grid">
-
-        <!-- Organisation details -->
-        <div class="reveal">
-          <ul class="info-list">
-            <li class="info-item">
-              <span class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M5 21V8l7-5 7 5v13"/></svg></span>
-              <div>
-                <h3>Organisation</h3>
-                <p>Namo Constructions<br><span class="text-muted" style="font-weight:400">Technology division: ClueTech Tecnnology</span></p>
-              </div>
-            </li>
-
-            <li class="info-item">
-              <span class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span>
-              <div>
-                <h3>Business address</h3>
-                <address class="address-block">
-                  <span>Survey No. 50, Nanaibaug, B. T. Kawade Road, Ghorpadigaon</span>
-                  <span>Pune City, Pune 411036</span>
-                  <span>Maharashtra, India</span>
-                </address>
-              </div>
-            </li>
-
-            <li class="info-item">
-              <span class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg></span>
-              <div>
-                <h3>Email</h3>
-                <p><a data-mailto href="#" data-bind="contact.email">contact@namoconstructions.in</a></p>
-              </div>
-            </li>
-
-            <li class="info-item">
-              <span class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg></span>
-              <div>
-                <h3>Phone</h3>
-                <p><a data-tel href="#" data-bind="contact.phoneDisplay">+91 77760 06122</a></p>
-              </div>
-            </li>
-
-            <li class="info-item">
-              <span class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/></svg></span>
-              <div>
-                <h3>Service area</h3>
-                <p>Pune and surrounding areas, Maharashtra</p>
-              </div>
-            </li>
+          <p>Resize and crop photos for profiles, documents and uploads, keeping the important part of the image in frame.</p>
+          <ul class="badge-list">
+            <li>Android</li><li>AI-Powered</li><li>Photo Editing</li><li>Mobile First</li>
           </ul>
+          <div class="product-card__actions">
+            <!-- EDIT: when published on Google Play, replace the span below with:
+                 <a class="btn btn--primary btn--sm" href="https://play.google.com/store/apps/details?id=YOUR.PACKAGE" target="_blank" rel="noopener">Get it on Google Play</a> -->
+            <span class="btn btn--soon" aria-disabled="true">Coming Soon</span>
+          </div>
+        </div>
+      </article>
 
-          <div class="contact-actions">
-            <a class="btn btn--navy" data-mailto href="#">
-              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
-              Email
-            </a>
-            <a class="btn btn--primary" data-tel href="#">
-              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg>
-              Call
-            </a>
-            <a class="btn btn--ghost" data-directions href="#" rel="noopener">
-              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l19-8-8 19-2-8-9-3Z"/></svg>
-              Directions
-            </a>
+      <!-- PRODUCT 2 -->
+      <article class="product-card reveal">
+        <div class="product-card__media">
+          <img src="assets/images/product-background-remover.jpg" alt="Clue AI Background Remover application icon" width="700" height="700" loading="lazy">
+          <span class="status-badge status-badge--soon">Coming Soon</span>
+        </div>
+        <div class="product-card__body">
+          <div class="product-card__head">
+            <span class="icon-chip"><svg class="icon" aria-hidden="true"><use href="#i-magic"></use></svg></span>
+            <h3>Clue AI Background Remover</h3>
+          </div>
+          <p>Remove or replace a photo background in a single step, with AI used to separate the subject from its background.</p>
+          <ul class="badge-list">
+            <li>Android</li><li>AI-Powered</li><li>Photo Editing</li><li>Mobile First</li>
+          </ul>
+          <div class="product-card__actions">
+            <!-- EDIT: replace with the real Google Play link once published -->
+            <span class="btn btn--soon" aria-disabled="true">Coming Soon</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- PRODUCT 3 -->
+      <article class="product-card reveal">
+        <div class="product-card__media">
+          <img src="assets/images/product-triangle-puzzle.jpg" alt="Clue Triangle Puzzle application icon" width="700" height="700" loading="lazy">
+          <span class="status-badge status-badge--soon">Coming Soon</span>
+        </div>
+        <div class="product-card__body">
+          <div class="product-card__head">
+            <span class="icon-chip"><svg class="icon" aria-hidden="true"><use href="#i-triangle"></use></svg></span>
+            <h3>Clue Triangle Puzzle</h3>
+          </div>
+          <p>A casual triangle-based puzzle game built for short, relaxed play sessions on a mobile screen.</p>
+          <ul class="badge-list">
+            <li>Android</li><li>Puzzle Game</li><li>Offline Play</li><li>Mobile First</li>
+          </ul>
+          <div class="product-card__actions">
+            <!-- EDIT: replace with the real Google Play link once published -->
+            <span class="btn btn--soon" aria-disabled="true">Coming Soon</span>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <div class="notice reveal">
+      <svg class="icon" aria-hidden="true"><use href="#i-info"></use></svg>
+      <p><strong>Availability:</strong> products marked <em>Coming Soon</em> are in development and are <strong>not yet published</strong> on Google Play. Official download links will be added on this page only after each application is released.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ANDROID ===================== -->
+<section class="section section--dark" id="android" aria-labelledby="android-title">
+  <div class="container split">
+    <div class="split__content reveal">
+      <p class="eyebrow eyebrow--gold">Platform — Android</p>
+      <h2 class="section__title" id="android-title">Clue AI applications, designed for Android smartphones</h2>
+      <p class="section__lead">The first releases from ClueTech Technology are mobile-first applications built for Android phones. Each app does one task well, with a simple interface that works on common Android screen sizes.</p>
+
+      <ul class="feature-list">
+        <li>
+          <span class="icon-chip icon-chip--ghost"><svg class="icon" aria-hidden="true"><use href="#i-smartphone"></use></svg></span>
+          <div><strong>Mobile-first design</strong><p>Interfaces built around one-handed use on a phone screen.</p></div>
+        </li>
+        <li>
+          <span class="icon-chip icon-chip--ghost"><svg class="icon" aria-hidden="true"><use href="#i-sparkles"></use></svg></span>
+          <div><strong>AI-assisted photo tools</strong><p>Resizing and background tasks handled with AI assistance.</p></div>
+        </li>
+        <li>
+          <span class="icon-chip icon-chip--ghost"><svg class="icon" aria-hidden="true"><use href="#i-briefcase"></use></svg></span>
+          <div><strong>Focused, single-purpose apps</strong><p>Small tools that stay simple and easy to use.</p></div>
+        </li>
+      </ul>
+
+      <div class="app-rows">
+        <div class="app-row"><span class="app-row__name">Clue AI Photo Resizer</span><span class="status-pill">Coming Soon</span></div>
+        <div class="app-row"><span class="app-row__name">Clue AI Background Remover</span><span class="status-pill">Coming Soon</span></div>
+        <div class="app-row"><span class="app-row__name">Clue Triangle Puzzle</span><span class="status-pill">Coming Soon</span></div>
+      </div>
+
+      <!-- EDIT: add the Google Play developer / listing link here once apps are published -->
+      <div class="hero__actions">
+        <span class="btn btn--soon" aria-disabled="true">Google Play link coming soon</span>
+        <a class="btn btn--ghost" href="#ai-apps">View all products</a>
+      </div>
+    </div>
+
+    <div class="split__media reveal">
+      <div class="device-frame">
+        <img src="assets/images/android-app.jpg" alt="ClueTech Android application screen mockup" width="780" height="1100" loading="lazy">
+      </div>
+      <div class="split__badge">
+        <svg class="icon" aria-hidden="true"><use href="#i-smartphone"></use></svg>
+        <span><strong>Android</strong><small>Mobile applications</small></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FLUTTER ===================== -->
+<section class="section" id="flutter" aria-labelledby="flutter-title">
+  <div class="container split split--reverse">
+    <div class="split__media reveal">
+      <div class="media-frame">
+        <img src="assets/images/flutter-app.jpg" alt="Flutter cross platform mobile application mockup by ClueTech Technology" width="1100" height="800" loading="lazy">
+      </div>
+      <div class="tech-chips">
+        <span>Flutter</span><span>Dart</span><span>Android</span><span>iOS (planned)</span>
+      </div>
+    </div>
+
+    <div class="split__content reveal">
+      <p class="eyebrow">Platform — Flutter</p>
+      <h2 class="section__title" id="flutter-title">The future direction: cross-platform software with Flutter</h2>
+      <p class="section__lead">Beyond Android, ClueTech Technology is preparing to build mobile software with Flutter — a single codebase that can target more than one platform, so future ClueTech apps reach more users without starting from zero.</p>
+
+      <div class="mini-cards">
+        <div class="mini-card"><span class="icon-chip icon-chip--blue"><svg class="icon" aria-hidden="true"><use href="#i-code"></use></svg></span><div><strong>One codebase, multiple platforms</strong><p>Shared logic and screens across mobile platforms.</p></div></div>
+        <div class="mini-card"><span class="icon-chip icon-chip--blue"><svg class="icon" aria-hidden="true"><use href="#i-image"></use></svg></span><div><strong>Consistent interface</strong><p>The same look and feel on different screen sizes.</p></div></div>
+        <div class="mini-card"><span class="icon-chip icon-chip--blue"><svg class="icon" aria-hidden="true"><use href="#i-clock"></use></svg></span><div><strong>Faster iteration</strong><p>Changes reflected across platforms from one codebase.</p></div></div>
+      </div>
+
+      <div class="notice notice--inline">
+        <svg class="icon" aria-hidden="true"><use href="#i-info"></use></svg>
+        <p><strong>Status: in development.</strong> No Flutter application has been released yet. This section will be updated with real links when the first Flutter app is published.</p>
+      </div>
+
+      <div class="hero__actions">
+        <span class="btn btn--soon" aria-disabled="true">Coming Soon</span>
+        <a class="btn btn--outline" href="#contact">Talk to us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PROJECTS ===================== -->
+<section class="section section--soft" id="projects" aria-labelledby="projects-title">
+  <div class="container">
+    <div class="section__head reveal">
+      <p class="eyebrow">Our work</p>
+      <h2 class="section__title" id="projects-title">Construction projects and software products</h2>
+      <p class="section__lead">A clear view of both divisions — construction categories handled by Namo Constructions and software products from ClueTech Technology.</p>
+    </div>
+
+    <div class="tabs reveal" role="tablist" aria-label="Project categories">
+      <button class="tab is-active" id="tab-construction" role="tab" aria-selected="true" aria-controls="panel-construction" type="button">Construction Projects</button>
+      <button class="tab" id="tab-software" role="tab" aria-selected="false" aria-controls="panel-software" tabindex="-1" type="button">Software Projects</button>
+    </div>
+
+    <!-- Construction projects -->
+    <div class="tab-panel is-active" id="panel-construction" role="tabpanel" aria-labelledby="tab-construction">
+      <div class="card-grid card-grid--3">
+        <!-- EDIT: replace the placeholder image and add real site details for each project -->
+        <article class="project-card reveal">
+          <div class="project-card__media">
+            <img src="assets/images/project-residential.jpg" alt="Residential house construction project by Namo Constructions" width="900" height="660" loading="lazy">
+            <span class="project-card__cat">Residential</span>
+          </div>
+          <div class="project-card__body">
+            <h3>Residential Houses</h3>
+            <p>Independent houses and residential buildings executed from footing to final finishes, with structural and architectural work coordinated on site.</p>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-card__media">
+            <img src="assets/images/project-bungalow.jpg" alt="Bungalow construction project by Namo Constructions" width="900" height="660" loading="lazy">
+            <span class="project-card__cat">Bungalow</span>
+          </div>
+          <div class="project-card__body">
+            <h3>Bungalows</h3>
+            <p>Independent bungalow construction covering structure, masonry, plaster, finishes and external works as per the approved drawing set.</p>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-card__media">
+            <img src="assets/images/project-rcc.jpg" alt="RCC framed structure project" width="900" height="660" loading="lazy">
+            <span class="project-card__cat">RCC</span>
+          </div>
+          <div class="project-card__body">
+            <h3>RCC Structures</h3>
+            <p>Framed RCC structures including footings, columns, beams, slabs and staircases, carried out to structural drawings and reinforcement detailing.</p>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-card__media">
+            <img src="assets/images/project-ongoing.jpg" alt="Ongoing construction project in progress" width="900" height="660" loading="lazy">
+            <span class="project-card__cat project-card__cat--open">Ongoing</span>
+          </div>
+          <div class="project-card__body">
+            <h3>Ongoing Projects</h3>
+            <p>Sites currently in progress. Stage, schedule and next activities are shared with the client through regular site updates.</p>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-card__media">
+            <img src="assets/images/project-completed.jpg" alt="Completed construction project handed over to the owner" width="900" height="660" loading="lazy">
+            <span class="project-card__cat">Completed</span>
+          </div>
+          <div class="project-card__body">
+            <h3>Completed Projects</h3>
+            <p>Projects completed and handed over, covering residential houses, bungalows and RCC structure work carried out by Namo Constructions.</p>
+          </div>
+        </article>
+
+        <article class="project-card project-card--cta reveal">
+          <div class="project-card__body">
+            <span class="icon-chip icon-chip--gold"><svg class="icon" aria-hidden="true"><use href="#i-image"></use></svg></span>
+            <h3>Add your project photos</h3>
+            <p>Real site photographs, locations and project details can be added to this section from the marked blocks in <code>index.html</code>.</p>
+            <a class="btn btn--outline btn--sm" href="#contact">Discuss a project</a>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <!-- Software projects -->
+    <div class="tab-panel" id="panel-software" role="tabpanel" aria-labelledby="tab-software" hidden>
+      <div class="card-grid card-grid--3">
+        <article class="project-card reveal">
+          <div class="project-card__media">
+            <img src="assets/images/product-photo-resizer.jpg" alt="Clue AI Photo Resizer software project" width="700" height="700" loading="lazy">
+            <span class="project-card__cat project-card__cat--open">Coming Soon</span>
+          </div>
+          <div class="project-card__body">
+            <h3>Clue AI Photo Resizer</h3>
+            <p>Android application for resizing and cropping photos with AI assistance. In development — not yet published on Google Play.</p>
+            <ul class="badge-list"><li>Android</li><li>AI</li></ul>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-card__media">
+            <img src="assets/images/product-background-remover.jpg" alt="Clue AI Background Remover software project" width="700" height="700" loading="lazy">
+            <span class="project-card__cat project-card__cat--open">Coming Soon</span>
+          </div>
+          <div class="project-card__body">
+            <h3>Clue AI Background Remover</h3>
+            <p>Android application for removing photo backgrounds with AI assistance. In development — not yet published on Google Play.</p>
+            <ul class="badge-list"><li>Android</li><li>AI</li></ul>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-card__media">
+            <img src="assets/images/product-triangle-puzzle.jpg" alt="Clue Triangle Puzzle software project" width="700" height="700" loading="lazy">
+            <span class="project-card__cat project-card__cat--open">Coming Soon</span>
+          </div>
+          <div class="project-card__body">
+            <h3>Clue Triangle Puzzle</h3>
+            <p>Mobile puzzle application under development by ClueTech Technology. Not yet published on Google Play.</p>
+            <ul class="badge-list"><li>Android</li><li>Game</li></ul>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-card__media">
+            <img src="assets/images/flutter-app.jpg" alt="Future Flutter cross platform applications by ClueTech Technology" width="1100" height="800" loading="lazy">
+            <span class="project-card__cat project-card__cat--open">Planned</span>
+          </div>
+          <div class="project-card__body">
+            <h3>Cross-Platform Flutter Apps</h3>
+            <p>The next stage of ClueTech Technology: mobile software built with Flutter for wider platform support. No Flutter application has been released yet.</p>
+            <ul class="badge-list"><li>Flutter</li><li>In Development</li></ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CONTACT ===================== -->
+<section class="section" id="contact" aria-labelledby="contact-title">
+  <div class="container">
+    <div class="section__head reveal">
+      <p class="eyebrow">Contact</p>
+      <h2 class="section__title" id="contact-title">Get in touch with Namo Constructions</h2>
+      <p class="section__lead">For construction enquiries, quotations and site discussions in Pune — or for questions about ClueTech applications — use the details below.</p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <!-- EDIT: organisation name, address, email, phone -->
+        <div class="info-card">
+          <span class="icon-chip"><svg class="icon" aria-hidden="true"><use href="#i-building"></use></svg></span>
+          <div>
+            <h3>Organisation</h3>
+            <p>NAMO CONSTRUCTIONS<br><span class="muted">Construction &amp; ClueTech Technology</span></p>
           </div>
         </div>
 
-        <!-- Enquiry form -->
-        <div class="form-card reveal" data-delay="2">
-          <h3 style="margin-bottom:.35rem">Send an enquiry</h3>
-          <p class="text-muted" style="font-size:.9rem;margin-bottom:1.25rem">
-            Fields marked <span class="req" style="color:var(--danger)">*</span> are required.
-          </p>
-
-          <!--
-            This form has FRONTEND VALIDATION ONLY. Nothing is stored on this
-            website unless a form endpoint is configured in
-            assets/js/site.config.js (form.endpoint). See README.md.
-          -->
-          <form data-contact-form novalidate>
-            <div class="form-grid form-grid--2">
-
-              <div class="form-field">
-                <label for="cf-name">Name <span class="req" aria-hidden="true">*</span></label>
-                <input type="text" id="cf-name" name="name" autocomplete="name"
-                       placeholder="Your full name" required>
-                <p class="error-msg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path d="M12 7.5v5M12 16h.01"/></svg><span></span></p>
-              </div>
-
-              <div class="form-field">
-                <label for="cf-phone">Phone <span class="req" aria-hidden="true">*</span></label>
-                <input type="tel" id="cf-phone" name="phone" autocomplete="tel" inputmode="tel"
-                       placeholder="+91 00000 00000" required>
-                <p class="error-msg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path d="M12 7.5v5M12 16h.01"/></svg><span></span></p>
-              </div>
-
-              <div class="form-field form-field--full">
-                <label for="cf-email">Email <span class="req" aria-hidden="true">*</span></label>
-                <input type="email" id="cf-email" name="email" autocomplete="email" inputmode="email"
-                       placeholder="you@example.com" required>
-                <p class="error-msg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path d="M12 7.5v5M12 16h.01"/></svg><span></span></p>
-              </div>
-
-              <div class="form-field form-field--full">
-                <label for="cf-subject">Subject <span class="req" aria-hidden="true">*</span></label>
-                <select id="cf-subject" name="subject" required>
-                  <option value="">Please select a subject</option>
-                  <option>House construction enquiry</option>
-                  <option>RCC / structural work</option>
-                  <option>Design and build</option>
-                  <option>Bungalow project</option>
-                  <option>Site visit request</option>
-                  <option>ClueTech software / app enquiry</option>
-                  <option>Flutter application enquiry</option>
-                  <option value="__other">Other / general enquiry</option>
-                </select>
-                <p class="hint" data-subject-note data-default="Please describe your requirement in the message below.">Choosing &ldquo;Other&rdquo; is fine &mdash; just describe your requirement in the message.</p>
-                <p class="error-msg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path d="M12 7.5v5M12 16h.01"/></svg><span></span></p>
-              </div>
-
-              <div class="form-field form-field--full">
-                <label for="cf-message">Message <span class="req" aria-hidden="true">*</span></label>
-                <textarea id="cf-message" name="message" rows="5"
-                          placeholder="Tell us about your plot, budget, timeline or the software you are looking for." required></textarea>
-                <p class="error-msg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path d="M12 7.5v5M12 16h.01"/></svg><span></span></p>
-              </div>
-
-              <!-- Anti-spam honeypot: hidden from people, tempting to bots -->
-              <div class="sr-only" aria-hidden="true">
-                <label for="cf-company">Company website (leave empty)</label>
-                <input type="text" id="cf-company" name="company_website" tabindex="-1" autocomplete="off">
-              </div>
-
-              <div class="form-field form-field--full">
-                <label class="consent" for="cf-consent">
-                  <input type="checkbox" id="cf-consent" name="consent">
-                  <span>I agree that Namo Constructions may contact me by phone, email or message about this enquiry. My details will be handled as described in the <a href="privacy.html">Privacy Policy</a>. <span class="req" aria-hidden="true">*</span></span>
-                </label>
-                <p class="error-msg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path d="M12 7.5v5M12 16h.01"/></svg><span></span></p>
-              </div>
-
-              <div class="form-field form-field--full">
-                <div class="form-status" data-form-status>
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path d="M12 16v-5M12 8h.01"/></svg>
-                  <span data-form-status-text></span>
-                </div>
-                <button class="btn btn--primary btn--block" type="submit" data-form-submit style="margin-top:.5rem">
-                  Send enquiry
-                </button>
-              </div>
-
-            </div>
-          </form>
+        <div class="info-card">
+          <span class="icon-chip"><svg class="icon" aria-hidden="true"><use href="#i-pin"></use></svg></span>
+          <div>
+            <h3>Business address</h3>
+            <p>Survey No. 50, Nanaibaug, B. T. Kawade Road,<br>Ghorpadigaon, Pune City, Pune 411036,<br>Maharashtra, India</p>
+          </div>
         </div>
 
+        <div class="info-card">
+          <span class="icon-chip"><svg class="icon" aria-hidden="true"><use href="#i-mail"></use></svg></span>
+          <div>
+            <h3>Business email</h3>
+            <p><a href="mailto:contact@namoconstructions.in">contact@namoconstructions.in</a></p>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <span class="icon-chip"><svg class="icon" aria-hidden="true"><use href="#i-phone"></use></svg></span>
+          <div>
+            <h3>Business phone</h3>
+            <p>7776006122</p>
+          </div>
+        </div>
+
+        <div class="contact-actions">
+          <a class="btn btn--primary" href="mailto:contact@namoconstructions.in"><svg class="icon icon--sm" aria-hidden="true"><use href="#i-mail"></use></svg> Email</a>
+        </div>
+      </div>
+
+      <div class="contact-form-wrap reveal">
+        <h3 class="contact-form__title">Send an enquiry</h3>
+        <p class="contact-form__intro">For a construction quotation, include your plot size, location and scope of work.</p>
+
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="cf-name">Name <span aria-hidden="true">*</span></label>
+              <input type="text" id="cf-name" name="name" autocomplete="name" placeholder="Your full name" required aria-describedby="cf-name-error">
+              <p class="field-error" id="cf-name-error" role="alert"></p>
+            </div>
+            <div class="form-field">
+              <label for="cf-email">Email <span aria-hidden="true">*</span></label>
+              <input type="email" id="cf-email" name="email" autocomplete="email" placeholder="you@example.com" required aria-describedby="cf-email-error">
+              <p class="field-error" id="cf-email-error" role="alert"></p>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label for="cf-phone">Phone <span aria-hidden="true">*</span></label>
+              <input type="tel" id="cf-phone" name="phone" autocomplete="tel" inputmode="tel" placeholder="10-digit mobile number" required aria-describedby="cf-phone-error">
+              <p class="field-error" id="cf-phone-error" role="alert"></p>
+            </div>
+            <div class="form-field">
+              <label for="cf-subject">Subject <span aria-hidden="true">*</span></label>
+              <input type="text" id="cf-subject" name="subject" placeholder="House construction / RCC / App query" required aria-describedby="cf-subject-error">
+              <p class="field-error" id="cf-subject-error" role="alert"></p>
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="cf-message">Message <span aria-hidden="true">*</span></label>
+            <textarea id="cf-message" name="message" rows="5" placeholder="Tell us about your requirement" required aria-describedby="cf-message-error"></textarea>
+            <p class="field-error" id="cf-message-error" role="alert"></p>
+          </div>
+
+          <div class="form-actions">
+            <button class="btn btn--primary" type="submit">Send Enquiry <svg class="icon icon--sm" aria-hidden="true"><use href="#i-arrow"></use></svg></button>
+            <p class="form-note"><svg class="icon icon--xs" aria-hidden="true"><use href="#i-lock"></use></svg> This form is checked in your browser and opens your own email application. <strong>No message data is stored on this website.</strong></p>
+          </div>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
 </main>
 
-<!-- ==========================================================================
-     FOOTER
-     ========================================================================== -->
+<!-- ===================== FOOTER ===================== -->
 <footer class="site-footer">
-  <div class="container">
-    <div class="footer-grid">
-
-      <div>
-        <div class="footer-brand">
-          <img class="brand-mark" src="assets/img/logo.svg" width="46" height="46" alt="" loading="lazy" decoding="async">
-          <div>
-            <span class="brand-name">Namo Constructions</span>
-            <span class="brand-sub">Construction &amp; Technology</span>
-          </div>
-        </div>
-        <p class="footer-about">
-          Residential construction and RCC engineering services in Pune and surrounding areas,
-          together with the ClueTech Tecnnology software division developing practical AI, Android
-          and Flutter applications.
-        </p>
-        <div class="social-row">
-          <a data-social="facebook" href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-8h2.7l.4-3.1h-3.1V7.9c0-.9.25-1.5 1.55-1.5H16.7V3.6A21 21 0 0 0 14.3 3.5c-2.4 0-4 1.45-4 4.1v2.3H7.6V13h2.7v8Z"/></svg></a>
-          <a data-social="instagram" href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17" cy="7" r="1.1" fill="currentColor" stroke="none"/></svg></a>
-          <a data-social="linkedin" href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.94 8.5H4V20h2.94Zm.5-3.3a1.7 1.7 0 1 0-3.4 0 1.7 1.7 0 0 0 3.4 0ZM20 13.9c0-3.1-1.66-4.6-3.88-4.6a3.35 3.35 0 0 0-3.04 1.67h-.04V8.5H10.1V20h2.94v-5.7c0-1.5.28-2.96 2.15-2.96 1.84 0 1.87 1.72 1.87 3.06V20H20Z"/></svg></a>
-          <a data-social="youtube" href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.6 7.6a2.5 2.5 0 0 0-1.76-1.77C18.25 5.4 12 5.4 12 5.4s-6.25 0-7.84.43A2.5 2.5 0 0 0 2.4 7.6 26 26 0 0 0 2 12a26 26 0 0 0 .4 4.4 2.5 2.5 0 0 0 1.76 1.77c1.59.43 7.84.43 7.84.43s6.25 0 7.84-.43a2.5 2.5 0 0 0 1.76-1.77A26 26 0 0 0 22 12a26 26 0 0 0-.4-4.4ZM10 15V9l5.2 3Z"/></svg></a>
-          <a data-social="x" href="#" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 3h3.1l-6.8 7.8L21.8 21h-6.2l-4.6-6-5.3 6H2.7l7.1-8.1L2.4 3h6.4l4.3 5.6ZM16.4 19.2h1.7L7.7 4.7H5.9Z"/></svg></a>
-          <a data-social="github" href="#" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.35 1.09 2.92.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg></a>
-        </div>
-      </div>
-
-      <nav aria-label="Footer navigation">
-        <h4>Explore</h4>
-        <ul class="footer-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#construction">Construction</a></li>
-          <li><a href="#ai-apps">AI Apps</a></li>
-          <li><a href="#android">Android</a></li>
-          <li><a href="#flutter">Flutter</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-
-      <div>
-        <h4>Contact</h4>
-        <ul class="footer-contact">
-          <li>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
-            <span>Survey No. 50, Nanaibaug, B. T. Kawade Road, Ghorpadigaon,<br>Pune City, Pune 411036, Maharashtra, India</span>
-          </li>
-          <li>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg>
-            <a data-tel href="#" data-bind="contact.phoneDisplay">+91 77760 06122</a>
-          </li>
-          <li>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
-            <a data-mailto href="#" data-bind="contact.email">contact@namoconstructions.in</a>
-          </li>
-        </ul>
-      </div>
-
+  <div class="container footer-grid">
+    <div class="footer-col footer-col--brand">
+      <a class="brand brand--footer" href="#home">
+        <img class="brand__mark" src="assets/images/logo.png" alt="" width="52" height="52" decoding="async">
+        <span class="brand__text">
+          <strong>NAMO CONSTRUCTIONS</strong>
+          <small>CONSTRUCTION &amp; CLUETECH TECHNOLOGY</small>
+        </span>
+      </a>
+      <p>Residential construction and RCC services in Pune, and practical AI, Android and Flutter software from ClueTech Technology.</p>
+      <!-- EDIT: add real social profile links, then remove the comment
+      <ul class="social">
+        <li><a href="https://www.facebook.com/YOUR-PROFILE" aria-label="Facebook" rel="noopener noreferrer" target="_blank">Facebook</a></li>
+        <li><a href="https://www.instagram.com/YOUR-PROFILE" aria-label="Instagram" rel="noopener noreferrer" target="_blank">Instagram</a></li>
+        <li><a href="https://www.linkedin.com/company/YOUR-PAGE" aria-label="LinkedIn" rel="noopener noreferrer" target="_blank">LinkedIn</a></li>
+      </ul>
+      -->
     </div>
 
-    <div class="footer-bottom">
-      <p style="margin:0">&copy; <span data-year>2026</span> Namo Constructions / ClueTech Software. All Rights Reserved.</p>
-      <ul class="footer-legal">
-        <li><a href="privacy.html">Privacy Policy</a></li>
-        <li><a href="terms.html">Terms &amp; Conditions</a></li>
-        <li><a data-directions href="#" rel="noopener">Directions</a></li>
+    <div class="footer-col">
+      <h3>Navigate</h3>
+      <ul class="footer-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#construction">Construction</a></li>
+        <li><a href="#ai-apps">AI Apps</a></li>
+        <li><a href="#android">Android</a></li>
+        <li><a href="#flutter">Flutter</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
+    </div>
+
+    <div class="footer-col">
+      <h3>Divisions</h3>
+      <ul class="footer-links">
+        <li><a href="#construction">Namo Constructions</a></li>
+        <li><a href="#construction">House Construction</a></li>
+        <li><a href="#construction">RCC Work</a></li>
+        <li><a href="#ai-apps">ClueTech Technology</a></li>
+        <li><a href="#android">Android Applications</a></li>
+        <li><a href="#flutter">Flutter Software</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h3>Contact</h3>
+      <ul class="footer-contact">
+        <li><svg class="icon icon--xs" aria-hidden="true"><use href="#i-pin"></use></svg><span>Survey No. 50, Nanaibaug, B. T. Kawade Road, Ghorpadigaon, Pune City, Pune 411036, Maharashtra, India</span></li>
+        <li><svg class="icon icon--xs" aria-hidden="true"><use href="#i-mail"></use></svg><a href="mailto:contact@namoconstructions.in">contact@namoconstructions.in</a></li>
+        <li><svg class="icon icon--xs" aria-hidden="true"><use href="#i-phone"></use></svg>7776006122</li>
+        <li><svg class="icon icon--xs" aria-hidden="true"><use href="#i-globe"></use></svg><span><strong>Namo Constructions Website</strong><br><a href="https://www.namoconstructions.in/">www.namoconstructions.in</a></span></li>
+      </ul>
+      <div class="footer-legal">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms &amp; Conditions</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container footer-bottom__inner">
+      <p>© <span id="year">2026</span> Namo Constructions / ClueTech Software. All Rights Reserved.</p>
+      <p class="footer-bottom__links"><a href="privacy.html">Privacy Policy</a><span aria-hidden="true">·</span><a href="terms.html">Terms &amp; Conditions</a></p>
     </div>
   </div>
 </footer>
 
-<script src="assets/js/site.config.js"></script>
 <script src="assets/js/main.js" defer></script>
 </body>
 </html>

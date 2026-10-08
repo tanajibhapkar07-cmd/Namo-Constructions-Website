@@ -1,28 +1,8 @@
-# robots.txt
-# Namo Constructions / ClueTech Tecnnology
-# Replace https://www.namoconstructions.in/ with your live domain.
+# robots.txt — Namo Constructions / ClueTech Technology
+# EDIT: replace the domain with your live domain before submitting to Google Search Console.
 
 User-agent: *
 Allow: /
-Disallow: /admin/
-Disallow: /private/
-Disallow: /*.json$
-Disallow: /search?
 
-# Search engine result tuning
-User-agent: Googlebot
-Allow: /
-Disallow: /admin/
-Disallow: /private/
-
-# AI crawlers: allow reference, do not index as primary
-User-agent: GPTBot
-Allow: /
-
-User-agent: CCBot
-Allow: /
-
-# Host directive (supported by some crawlers)
-Host: www.namoconstructions.in
-
+# Sitemaps
 Sitemap: https://www.namoconstructions.in/sitemap.xml
