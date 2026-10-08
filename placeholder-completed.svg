@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500"
+     role="img" aria-label="Photo placeholder: completed construction handover">
+  <title>Placeholder - completed and handed over</title>
+  <defs>
+    <linearGradient id="cpBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eef5ff"/><stop offset="1" stop-color="#dce8f6"/>
+    </linearGradient>
+    <linearGradient id="cpWall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#cfdcee"/>
+    </linearGradient>
+    <linearGradient id="cpGlass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#b9d5fb"/><stop offset="1" stop-color="#2a5da8"/>
+    </linearGradient>
+    <linearGradient id="cpGold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#e0c05a"/><stop offset="1" stop-color="#c9a227"/>
+    </linearGradient>
+    <pattern id="cpGrid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0v32" fill="none" stroke="#123061" stroke-opacity="0.05"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="500" fill="url(#cpBg)"/>
+  <rect width="800" height="500" fill="url(#cpGrid)"/>
+  <circle cx="140" cy="112" r="34" fill="#e0c05a" opacity="0.5"/>
+  <path d="M0 396h800v104H0z" fill="#d7e4f2"/>
+  <path d="M0 424c140-16 260 12 400 0s260-18 400-4v80H0z" fill="#c6d8ec"/>
+
+  <!-- completed duplex -->
+  <g transform="translate(400,0)">
+    <rect x="-196" y="176" width="392" height="212" fill="url(#cpWall)"/>
+    <rect x="-210" y="156" width="420" height="22" rx="5" fill="#ffffff"/>
+    <g fill="url(#cpGlass)">
+      <rect x="-164" y="200" width="80" height="60" rx="4"/>
+      <rect x="-60" y="200" width="120" height="86" rx="4"/>
+      <rect x="88" y="200" width="80" height="60" rx="4"/>
+      <rect x="-164" y="284" width="80" height="60" rx="4"/>
+      <rect x="-60" y="308" width="120" height="72" rx="4"/>
+      <rect x="88" y="284" width="80" height="60" rx="4"/>
+    </g>
+    <rect x="-60" y="204" width="112" height="78" rx="3" fill="url(#cpGold)" opacity="0.9"/>
+    <rect x="-60" y="312" width="112" height="64" rx="3" fill="url(#cpGold)" opacity="0.75"/>
+    <rect x="-196" y="388" width="392" height="12" fill="#b9c9dc"/>
+  </g>
+
+  <!-- completion flag -->
+  <g transform="translate(624,238)">
+    <rect x="-2" y="0" width="5" height="164" rx="2" fill="#8fa6c1"/>
+    <path d="M3 4h66l-16 24 16 24H3z" fill="url(#cpGold)"/>
+  </g>
+
+  <!-- key / handover icon -->
+  <g transform="translate(168,300)" opacity="0.9">
+    <circle cx="0" cy="0" r="26" fill="#1663cf"/>
+    <g fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round">
+      <circle cx="-5" cy="-4" r="9"/>
+      <path d="M2 2l16 16M18 18l6-6M13 13l5-5"/>
+    </g>
+  </g>
+
+  <g transform="translate(400,438)">
+    <rect x="-128" y="-19" width="256" height="38" rx="19" fill="#ffffff" opacity="0.94" stroke="#123061" stroke-opacity="0.12"/>
+    <text y="4" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="600"
+          fill="#26364e">Completed &amp; Handed Over</text>
+  </g>
+  <text x="400" y="60" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13"
+        fill="#64748b">Replace this file with a real project photograph</text>
+</svg>

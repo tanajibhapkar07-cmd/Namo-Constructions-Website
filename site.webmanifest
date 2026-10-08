@@ -1,0 +1,44 @@
+{
+  "name": "Namo Constructions - Construction & Cluetech Technology",
+  "short_name": "Namo Constructions",
+  "description": "Namo Constructions provides residential house construction, RCC work and design-build services in Pune. ClueTech Tecnnology develops practical AI, Android and Flutter applications.",
+  "lang": "en-IN",
+  "dir": "ltr",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#ffffff",
+  "theme_color": "#0c2044",
+  "categories": ["business", "construction", "productivity"],
+  "icons": [
+    {
+      "src": "assets/img/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/img/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/img/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Construction services",
+      "url": "/#construction"
+    },
+    {
+      "name": "Contact",
+      "url": "/#contact"
+    }
+  ]
+}

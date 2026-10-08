@@ -1,7 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Namo Constructions">
-  <rect width="64" height="64" rx="14" fill="#0A1A33"/>
-  <path d="M8 31 32 11l24 20" fill="none" stroke="#C9A227" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M14 49V29h36v20" fill="none" stroke="#F5F8FC" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M10 52h44" fill="none" stroke="#F5F8FC" stroke-width="5" stroke-linecap="round"/>
-  <rect x="27" y="37" width="10" height="12" rx="2" fill="#1D53C4"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Namo Constructions">
+  <title>Namo Constructions</title>
+  <defs>
+    <linearGradient id="fvBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#123061"/>
+      <stop offset="1" stop-color="#050d1c"/>
+    </linearGradient>
+    <linearGradient id="fvRoof" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#5c9cf5"/>
+      <stop offset="1" stop-color="#1663cf"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="url(#fvBg)"/>
+  <path d="M32 13 50 25.5h-6v18.5H20V25.5h-6L32 13Z" fill="#ffffff"/>
+  <path d="M32 13 50 25.5h-6v3H32V13Z" fill="#b9d5fb"/>
+  <rect x="28" y="32" width="8" height="12" rx="1.4" fill="#e0c05a"/>
+  <path d="M17 50h30" stroke="#2a7bea" stroke-width="3" stroke-linecap="round"/>
 </svg>

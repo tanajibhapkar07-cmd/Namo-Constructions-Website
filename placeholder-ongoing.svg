@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500"
+     role="img" aria-label="Photo placeholder: ongoing construction site">
+  <title>Placeholder - ongoing construction</title>
+  <defs>
+    <linearGradient id="onBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eef5ff"/><stop offset="1" stop-color="#dae6f5"/>
+    </linearGradient>
+    <linearGradient id="onGlass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#b9d5fb"/><stop offset="1" stop-color="#2a5da8"/>
+    </linearGradient>
+    <linearGradient id="onGold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#e0c05a"/><stop offset="1" stop-color="#c9a227"/>
+    </linearGradient>
+    <pattern id="onGrid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0v32" fill="none" stroke="#123061" stroke-opacity="0.05"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="500" fill="url(#onBg)"/>
+  <rect width="800" height="500" fill="url(#onGrid)"/>
+  <path d="M0 402h800v98H0z" fill="#d7e4f2"/>
+  <path d="M0 402c140-14 260 12 400 2s260-16 400-4v100H0z" fill="#c6d8ec" opacity="0.8"/>
+
+  <!-- tower crane -->
+  <g stroke="#2a5da8" stroke-width="7" fill="none" stroke-linecap="round">
+    <path d="M636 404V86"/>
+    <path d="M452 86h368"/>
+    <path d="M636 86 560 404"/>
+    <path d="M636 120 712 404"/>
+  </g>
+  <g stroke="#2a5da8" stroke-width="4" fill="none">
+    <path d="M452 86 636 86 636 130 452 86"/>
+    <path d="M452 86h-24"/>
+  </g>
+  <rect x="392" y="96" width="56" height="40" rx="4" fill="#1663cf"/>
+  <path d="M420 136v58" stroke="#2a5da8" stroke-width="4"/>
+  <rect x="386" y="194" width="68" height="46" rx="4" fill="#c9a227"/>
+  <path d="M636 86h44l-10 22h-34z" fill="#1663cf"/>
+
+  <!-- building under construction -->
+  <g>
+    <rect x="120" y="180" width="440" height="224" fill="#f2f6fb"/>
+    <rect x="120" y="180" width="440" height="224" fill="none" stroke="#b9c9dc" stroke-width="3"/>
+    <g fill="url(#onGlass)" opacity="0.85">
+      <rect x="150" y="212" width="88" height="70" rx="3"/>
+      <rect x="262" y="212" width="88" height="70" rx="3"/>
+      <rect x="374" y="212" width="88" height="70" rx="3"/>
+      <rect x="150" y="312" width="88" height="70" rx="3"/>
+      <rect x="262" y="312" width="88" height="70" rx="3"/>
+    </g>
+    <rect x="374" y="312" width="88" height="70" rx="3" fill="#c9d6e8"/>
+    <!-- scaffolding -->
+    <g stroke="#8fa6c1" stroke-width="4">
+      <path d="M112 190v216M480 190v216M566 190v216M104 190h464M104 280h464M104 370h464"/>
+    </g>
+    <!-- upper slab -->
+    <rect x="120" y="150" width="440" height="30" rx="4" fill="#dbe4f0"/>
+    <g stroke="#5a6b84" stroke-width="5" stroke-linecap="round">
+      <path d="M180 150v-34M240 150v-34M300 150v-34M360 150v-34M420 150v-34M480 150v-34"/>
+    </g>
+    <!-- safety net / barrier -->
+    <rect x="104" y="380" width="464" height="26" fill="url(#onGold)" opacity="0.9"/>
+  </g>
+
+  <!-- worker silhouette -->
+  <g fill="#123061" opacity="0.85">
+    <circle cx="620" cy="330" r="14"/>
+    <path d="M606 348h28l8 44h-44z"/>
+    <rect x="600" y="322" width="40" height="10" rx="5" fill="#c9a227"/>
+  </g>
+
+  <g transform="translate(400,438)">
+    <rect x="-104" y="-19" width="208" height="38" rx="19" fill="#ffffff" opacity="0.94" stroke="#123061" stroke-opacity="0.12"/>
+    <text y="4" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="600"
+          fill="#26364e">Ongoing Project</text>
+  </g>
+  <text x="400" y="60" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13"
+        fill="#64748b">Replace this file with a real project photograph</text>
+</svg>

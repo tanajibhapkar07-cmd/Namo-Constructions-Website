@@ -1,0 +1,292 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 940" width="1120" height="940"
+     role="img" aria-labelledby="heroTitle heroDesc">
+  <title id="heroTitle">Namo Constructions and ClueTech Tecnnology</title>
+  <desc id="heroDesc">Illustration combining a modern residential house, an architectural blueprint, a smartphone and a laptop running artificial intelligence software.</desc>
+
+  <defs>
+    <linearGradient id="hBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#123061"/>
+      <stop offset="0.55" stop-color="#0a1c3c"/>
+      <stop offset="1" stop-color="#050d1c"/>
+    </linearGradient>
+    <radialGradient id="hGlowBlue" cx="0.75" cy="0.15" r="0.6">
+      <stop offset="0" stop-color="#2a7bea" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#2a7bea" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="hGlowGold" cx="0.15" cy="0.9" r="0.6">
+      <stop offset="0" stop-color="#c9a227" stop-opacity="0.4"/>
+      <stop offset="1" stop-color="#c9a227" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="hWall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#c3d5ea"/>
+    </linearGradient>
+    <linearGradient id="hWallDark" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#dfeaf7"/>
+      <stop offset="1" stop-color="#9fb6d1"/>
+    </linearGradient>
+    <linearGradient id="hSlab" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#a9c2dc"/>
+    </linearGradient>
+    <linearGradient id="hGlass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#b9d5fb"/>
+      <stop offset="0.5" stop-color="#5c9cf5"/>
+      <stop offset="1" stop-color="#2a5da8"/>
+    </linearGradient>
+    <linearGradient id="hWarm" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffe9ad"/>
+      <stop offset="1" stop-color="#e0c05a"/>
+    </linearGradient>
+    <linearGradient id="hScreen" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f4f8ff"/>
+      <stop offset="1" stop-color="#dbe8f8"/>
+    </linearGradient>
+    <linearGradient id="hGold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#e0c05a"/>
+      <stop offset="1" stop-color="#c9a227"/>
+    </linearGradient>
+    <filter id="hShadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#020814" flood-opacity="0.5"/>
+    </filter>
+    <filter id="hSoft" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#020814" flood-opacity="0.45"/>
+    </filter>
+    <pattern id="hGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0v40" fill="none" stroke="#ffffff" stroke-opacity="0.055" stroke-width="1"/>
+    </pattern>
+    <clipPath id="hPhoneClip"><rect x="96" y="352" width="164" height="436" rx="24"/></clipPath>
+    <clipPath id="hLapClip"><rect x="812" y="470" width="266" height="168" rx="8"/></clipPath>
+  </defs>
+
+  <!-- ===================== BACKGROUND ===================== -->
+  <rect width="1120" height="940" fill="url(#hBg)"/>
+  <rect width="1120" height="940" fill="url(#hGrid)"/>
+  <rect width="1120" height="940" fill="url(#hGlowBlue)"/>
+  <rect width="1120" height="940" fill="url(#hGlowGold)"/>
+
+  <!-- faint circular accent rings -->
+  <g fill="none" stroke="#ffffff" stroke-opacity="0.07">
+    <circle cx="900" cy="250" r="150"/>
+    <circle cx="900" cy="250" r="215"/>
+    <circle cx="240" cy="700" r="120"/>
+  </g>
+
+  <!-- ===================== ARCHITECTURAL BLUEPRINT ===================== -->
+  <g transform="translate(96,44) rotate(-7 210 145)" filter="url(#hSoft)">
+    <rect x="0" y="0" width="420" height="290" rx="8" fill="#0b1e3f" stroke="#5c9cf5" stroke-opacity="0.55" stroke-width="2"/>
+    <g stroke="#5c9cf5" stroke-opacity="0.35" stroke-width="1">
+      <path d="M20 20h380M20 60h380M20 100h380M20 140h380M20 180h380M20 220h380M20 260h380"/>
+      <path d="M20 20v240M60 20v240M100 20v240M140 20v240M180 20v240M220 20v240M260 20v240M300 20v240M340 20v240M380 20v240"/>
+    </g>
+    <!-- floor plan walls -->
+    <g fill="none" stroke="#e0c05a" stroke-width="3" stroke-linecap="square">
+      <path d="M60 60h300v180H60z"/>
+      <path d="M180 60v120M300 60v180M60 150h120"/>
+      <path d="M180 180h120"/>
+    </g>
+    <!-- door swing -->
+    <g fill="none" stroke="#e0c05a" stroke-opacity="0.7" stroke-width="1.6">
+      <path d="M300 240a60 60 0 0 0 60-60"/>
+      <path d="M180 180v-50a50 50 0 0 0-50 50"/>
+    </g>
+    <!-- dimension line -->
+    <g stroke="#5c9cf5" stroke-width="1.2" stroke-opacity="0.8">
+      <path d="M60 272h300M60 266v12M360 266v12"/>
+    </g>
+    <text x="210" y="284" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11"
+          fill="#b9d5fb" letter-spacing="1.5">FLOOR PLAN</text>
+  </g>
+
+  <!-- ===================== AI / SOFTWARE NODES (top right) ===================== -->
+  <g filter="url(#hSoft)">
+    <path d="M856 132 946 96 1036 140M946 96l22 88M1036 140l-52 44" fill="none" stroke="#2a7bea" stroke-opacity="0.6" stroke-width="2"/>
+    <g>
+      <rect x="922" y="72" width="48" height="48" rx="12" fill="#1663cf" opacity="0.95"/>
+      <g stroke="#ffffff" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M940 88h12v6h-12zM940 100h7"/>
+        <path d="M946 94v6"/>
+      </g>
+      <circle cx="856" cy="132" r="16" fill="#123061" stroke="#5c9cf5" stroke-width="2"/>
+      <circle cx="856" cy="132" r="5" fill="#5c9cf5"/>
+      <circle cx="1036" cy="140" r="16" fill="#123061" stroke="#e0c05a" stroke-width="2"/>
+      <circle cx="1036" cy="140" r="5" fill="#e0c05a"/>
+      <circle cx="984" cy="184" r="12" fill="#123061" stroke="#5c9cf5" stroke-width="2"/>
+    </g>
+    <!-- sparkles -->
+    <g fill="#e0c05a">
+      <path d="M800 96l4 12 12 4-12 4-4 12-4-12-12-4 12-4z" opacity=".9"/>
+      <path d="M1078 236l3 9 9 3-9 3-3 9-3-9-9-3 9-3z" opacity=".8"/>
+    </g>
+  </g>
+
+  <!-- ===================== MODERN HOUSE ===================== -->
+  <g id="house">
+    <!-- ground shadow -->
+    <ellipse cx="560" cy="800" rx="360" ry="34" fill="#020814" opacity="0.5"/>
+
+    <!-- right glass veranda -->
+    <rect x="762" y="668" width="150" height="122" fill="#123061"/>
+    <rect x="762" y="652" width="162" height="20" rx="4" fill="url(#hSlab)"/>
+    <g fill="url(#hGlass)">
+      <rect x="772" y="678" width="42" height="102" rx="3"/>
+      <rect x="820" y="678" width="42" height="102" rx="3"/>
+      <rect x="868" y="678" width="36" height="102" rx="3"/>
+    </g>
+    <path d="M772 690h132M772 720h132" stroke="#e9f2ff" stroke-opacity="0.25" stroke-width="2"/>
+
+    <!-- left wing -->
+    <rect x="250" y="580" width="182" height="210" fill="url(#hWall)"/>
+    <rect x="238" y="558" width="206" height="22" rx="5" fill="url(#hSlab)"/>
+    <g fill="url(#hGlass)">
+      <rect x="268" y="600" width="60" height="52" rx="4"/>
+      <rect x="342" y="600" width="60" height="52" rx="4"/>
+    </g>
+    <!-- main door -->
+    <rect x="288" y="676" width="72" height="114" rx="4" fill="#123061"/>
+    <rect x="296" y="686" width="56" height="104" rx="3" fill="url(#hWarm)" opacity="0.92"/>
+    <circle cx="343" cy="736" r="3" fill="#123061"/>
+    <!-- steps -->
+    <g fill="#e6eef8">
+      <rect x="276" y="790" width="96" height="8" rx="2"/>
+      <rect x="268" y="798" width="112" height="9" rx="2"/>
+    </g>
+
+    <!-- main two-storey block -->
+    <rect x="420" y="402" width="342" height="388" fill="url(#hWall)"/>
+    <rect x="406" y="380" width="370" height="24" rx="6" fill="url(#hSlab)"/>
+    <!-- upper windows -->
+    <g fill="url(#hGlass)">
+      <rect x="446" y="428" width="58" height="74" rx="4"/>
+      <rect x="524" y="428" width="58" height="74" rx="4"/>
+      <rect x="602" y="428" width="58" height="74" rx="4"/>
+      <rect x="680" y="428" width="58" height="74" rx="4"/>
+    </g>
+    <!-- horizontal balcony band -->
+    <rect x="420" y="524" width="342" height="18" fill="#9fb6d1"/>
+    <rect x="424" y="518" width="334" height="10" rx="4" fill="url(#hSlab)"/>
+    <!-- ground floor glazing -->
+    <g fill="url(#hGlass)">
+      <rect x="446" y="566" width="120" height="224" rx="4"/>
+      <rect x="582" y="566" width="58" height="148" rx="4"/>
+      <rect x="656" y="566" width="82" height="120" rx="4"/>
+    </g>
+    <!-- warm interior glow behind upper windows -->
+    <g fill="url(#hWarm)" opacity="0.9">
+      <rect x="680" y="438" width="58" height="64" rx="4"/>
+      <rect x="656" y="676" width="82" height="20" rx="4"/>
+    </g>
+    <!-- vertical fins -->
+    <g fill="#dfeaf7">
+      <rect x="578" y="428" width="8" height="74"/>
+      <rect x="656" y="428" width="8" height="74"/>
+    </g>
+    <!-- roof detail -->
+    <rect x="470" y="366" width="120" height="16" rx="4" fill="#b9d5fb" opacity="0.6"/>
+    <circle cx="530" cy="374" r="4" fill="#e0c05a"/>
+  </g>
+
+  <!-- ===================== SMARTPHONE (AI photo tools) ===================== -->
+  <g filter="url(#hShadow)">
+    <rect x="84" y="340" width="188" height="460" rx="30" fill="#0a1c3c" stroke="#5c9cf5" stroke-opacity="0.5" stroke-width="2"/>
+    <g clip-path="url(#hPhoneClip)">
+      <rect x="96" y="352" width="164" height="436" fill="url(#hScreen)"/>
+      <!-- app bar -->
+      <rect x="96" y="352" width="164" height="34" fill="#0c2044"/>
+      <circle cx="150" cy="369" r="5" fill="#5c9cf5"/>
+      <rect x="162" y="365" width="46" height="8" rx="4" fill="#b9d5fb"/>
+      <circle cx="238" cy="369" r="5" fill="#e0c05a"/>
+      <!-- photo being resized -->
+      <g transform="translate(112,400)">
+        <rect width="132" height="96" rx="8" fill="#5c9cf5" opacity="0.25"/>
+        <path d="M0 96 40 48l24 22 22-20 46 46z" fill="#2a7bea" opacity="0.55"/>
+        <circle cx="104" cy="24" r="11" fill="#e0c05a" opacity="0.85"/>
+        <rect x="20" y="10" width="92" height="76" rx="6" fill="none" stroke="#1663cf" stroke-width="2.5" stroke-dasharray="9 7"/>
+        <g fill="#1663cf">
+          <rect x="16" y="6" width="9" height="9" rx="2"/>
+          <rect x="107" y="6" width="9" height="9" rx="2"/>
+          <rect x="16" y="77" width="9" height="9" rx="2"/>
+          <rect x="107" y="77" width="9" height="9" rx="2"/>
+        </g>
+      </g>
+      <!-- quality slider -->
+      <rect x="112" y="514" width="132" height="10" rx="5" fill="#d5e2f1"/>
+      <rect x="112" y="514" width="86" height="10" rx="5" fill="url(#hGold)"/>
+      <circle cx="198" cy="519" r="9" fill="#1663cf" stroke="#ffffff" stroke-width="2"/>
+      <g fill="#8fa6c1">
+        <rect x="112" y="538" width="40" height="6" rx="3"/>
+        <rect x="204" y="538" width="40" height="6" rx="3"/>
+      </g>
+      <!-- action buttons -->
+      <rect x="112" y="562" width="62" height="30" rx="15" fill="#1663cf"/>
+      <rect x="182" y="562" width="62" height="30" rx="15" fill="#0c2044"/>
+      <g fill="#ffffff" opacity="0.9">
+        <rect x="128" y="574" width="30" height="6" rx="3"/>
+        <rect x="198" y="574" width="30" height="6" rx="3"/>
+      </g>
+      <!-- result strip -->
+      <g transform="translate(112,608)">
+        <rect width="40" height="40" rx="9" fill="#2a7bea" opacity="0.85"/>
+        <rect x="46" width="40" height="40" rx="9" fill="#c9a227" opacity="0.8"/>
+        <rect x="92" width="40" height="40" rx="9" fill="#b9d5fb"/>
+      </g>
+      <!-- bottom nav -->
+      <g fill="#a9c2dc">
+        <rect x="112" y="672" width="26" height="6" rx="3"/>
+        <rect x="152" y="672" width="26" height="6" rx="3"/>
+        <rect x="192" y="672" width="26" height="6" rx="3"/>
+        <rect x="232" y="672" width="12" height="6" rx="3"/>
+      </g>
+    </g>
+    <!-- notch + home indicator -->
+    <rect x="152" y="344" width="52" height="12" rx="6" fill="#050d1c"/>
+    <rect x="142" y="778" width="72" height="5" rx="2.5" fill="#5c9cf5" opacity="0.6"/>
+  </g>
+
+  <!-- ===================== LAPTOP (AI software) ===================== -->
+  <g filter="url(#hShadow)">
+    <rect x="798" y="452" width="294" height="200" rx="12" fill="#0a1c3c" stroke="#5c9cf5" stroke-opacity="0.45" stroke-width="2"/>
+    <g clip-path="url(#hLapClip)">
+      <rect x="812" y="470" width="266" height="168" fill="#0b1e3f"/>
+      <!-- code editor -->
+      <rect x="812" y="470" width="34" height="168" fill="#07152c"/>
+      <g fill="#3d5a80">
+        <rect x="821" y="486" width="16" height="4" rx="2"/>
+        <rect x="821" y="504" width="16" height="4" rx="2"/>
+        <rect x="821" y="522" width="16" height="4" rx="2"/>
+        <rect x="821" y="540" width="16" height="4" rx="2"/>
+      </g>
+      <g>
+        <rect x="856" y="484" width="54" height="8" rx="4" fill="#2a7bea"/>
+        <rect x="918" y="484" width="34" height="8" rx="4" fill="#5c9cf5" opacity="0.7"/>
+        <rect x="874" y="502" width="86" height="8" rx="4" fill="#b9d5fb" opacity="0.5"/>
+        <rect x="874" y="520" width="120" height="8" rx="4" fill="#c9a227" opacity="0.75"/>
+        <rect x="874" y="538" width="70" height="8" rx="4" fill="#5c9cf5" opacity="0.6"/>
+        <rect x="856" y="556" width="104" height="8" rx="4" fill="#b9d5fb" opacity="0.45"/>
+        <rect x="856" y="574" width="150" height="8" rx="4" fill="#2a7bea" opacity="0.45"/>
+        <rect x="856" y="592" width="60" height="8" rx="4" fill="#5c9cf5" opacity="0.4"/>
+      </g>
+      <!-- AI response bubble -->
+      <g>
+        <rect x="856" y="606" width="206" height="24" rx="12" fill="#1663cf" opacity="0.9"/>
+        <rect x="868" y="615" width="120" height="6" rx="3" fill="#ffffff" opacity="0.85"/>
+        <circle cx="1046" cy="618" r="5" fill="#e0c05a"/>
+      </g>
+    </g>
+    <!-- base -->
+    <path d="M770 652h350l22 26a6 6 0 0 1-5 9H753a6 6 0 0 1-5-9z" fill="#123061" stroke="#5c9cf5" stroke-opacity="0.4"/>
+    <rect x="900" y="660" width="92" height="8" rx="4" fill="#0a1c3c"/>
+  </g>
+
+  <!-- ===================== FOREGROUND ACCENTS ===================== -->
+  <g fill="none" stroke-linecap="round">
+    <path d="M126 852h180" stroke="#2a7bea" stroke-width="3" stroke-opacity="0.5"/>
+    <path d="M818 852h176" stroke="#e0c05a" stroke-width="3" stroke-opacity="0.6"/>
+    <circle cx="322" cy="852" r="5" fill="#2a7bea" stroke="none"/>
+    <circle cx="978" cy="852" r="5" fill="#e0c05a" stroke="none"/>
+  </g>
+  <g fill="#b9d5fb" opacity="0.5">
+    <rect x="126" y="868" width="86" height="6" rx="3"/>
+    <rect x="818" y="868" width="112" height="6" rx="3"/>
+  </g>
+</svg>

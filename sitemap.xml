@@ -1,22 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- EDIT: replace the domain with your live domain and update <lastmod> when pages change. -->
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<!--
+  Sitemap for https://www.namoconstructions.in/
+  Replace the domain below with your live domain. Update <lastmod> whenever you
+  make a real change to a page.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
   <url>
     <loc>https://www.namoconstructions.in/</loc>
-    <lastmod>2026-10-06</lastmod>
+    <lastmod>2026-01-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
+
   <url>
     <loc>https://www.namoconstructions.in/privacy.html</loc>
-    <lastmod>2026-10-06</lastmod>
+    <lastmod>2026-01-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
+
   <url>
     <loc>https://www.namoconstructions.in/terms.html</loc>
-    <lastmod>2026-10-06</lastmod>
+    <lastmod>2026-01-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
+
 </urlset>

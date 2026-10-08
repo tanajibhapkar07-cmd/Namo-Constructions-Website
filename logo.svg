@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Namo Constructions logo">
+  <title>Namo Constructions</title>
+  <defs>
+    <linearGradient id="ncShield" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#123061"/>
+      <stop offset="0.55" stop-color="#0c2044"/>
+      <stop offset="1" stop-color="#050d1c"/>
+    </linearGradient>
+    <linearGradient id="ncRoof" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#5c9cf5"/>
+      <stop offset="1" stop-color="#1663cf"/>
+    </linearGradient>
+    <linearGradient id="ncWall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#dce7f5"/>
+    </linearGradient>
+    <linearGradient id="ncGold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#e0c05a"/>
+      <stop offset="1" stop-color="#c9a227"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Shield / rounded plate -->
+  <rect x="2" y="2" width="60" height="60" rx="15" fill="url(#ncShield)"/>
+
+  <!-- House silhouette (construction) -->
+  <path d="M32 11.5 51.5 25H45v21a2 2 0 0 1-2 2H21a2 2 0 0 1-2-2V25h-6.5L32 11.5Z" fill="url(#ncWall)"/>
+  <path d="M32 11.5 51.5 25H45v3H32V11.5Z" fill="#b9d5fb"/>
+  <rect x="27.5" y="34" width="9" height="14" rx="1.6" fill="url(#ncGold)"/>
+
+  <!-- Technology circuit nodes (software division) -->
+  <circle cx="18.5" cy="52.5" r="2.4" fill="#2a7bea"/>
+  <circle cx="45.5" cy="52.5" r="2.4" fill="#2a7bea"/>
+  <path d="M21 52.5h22" stroke="#2a7bea" stroke-width="1.6" stroke-linecap="round"/>
+  <path d="M18.5 50v-2.6h13" stroke="#e0c05a" stroke-width="1.6" stroke-linecap="round" fill="none" opacity=".9"/>
+</svg>
